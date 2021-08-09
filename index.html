@@ -11,33 +11,10 @@
     </style>
   </head>
   <body>
-    <div>
-      <div style="position: absolute; left: 10px; top: 10px">
-        <p>LOGO</p>
-      </div>
-      <div style="position: absolute; left: 150px; top: 20px">
-        <a href="tel:+7831000000"> tel: +7831000000 </a>
-      </div>
-      <div style="position: absolute; left: 300px; top: 20px">
-        <a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a>
-      </div>
-      <div style="position: absolute; left: 500px; top: 20px">
-        ул. Спортивная, д.1
-      </div>
-      <div style="position: absolute; left: 700px; top: 20px">
-        <form action="/order">
-          <button type="button">Заказать звонок</button>
-        </form>
-      </div>
-    </div>
-    <div style="margin-top: 100px; margin-block-end: 200px">
-      Закажите билет в кино
-    </div>
-
     <!--пробы написания шрифтов-->
     <em> Курсивный текст с помощью тега &lt; em &gt; </em>
     <div>
-      <del> Зачёркнутый текст с помощью УСТАРЕВШЕГО тега &lt; strike &gt; </del>
+      <del> Зачёркнутый текст с помощью тега &lt; del &gt; </del>
     </div>
     <div>
       <b> Жирный текст с помощью тега &lt; b &gt; </b>
@@ -62,20 +39,41 @@
     <div style="float: left; background-color: orange">
       Добро пожаловать налево!
     </div>
-    <!-- далее выделение цитат-->
+    <!-- далее выделение цитат, выделение абзацев, переносы, заключение в кавычки и т.д.-->
     <div style="margin: 20px 50px">
       <p style="background-color: rgb(199, 238, 184)">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        tempor incididunt ut labore et dolore magna aliqua. <p>Ut enim ad minim
+        veniam, quis nostrud exercitation <br> ullamco nisi ut aliquip ex ea
+        commodo consequat. </br>Duis aute irure dolor in reprehenderit in voluptate </br>
+        velit esse cillum dolore eu fugiat nulla pariatur.</p> <p>Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Вышеуказанный текст это <q>РЫБА</q> !
+        mollit anim id est laborum. </p> Вышеуказанный текст это <q>"РЫБА"</q> !
       </p>
     </div>
     <span>
-      Lorem ipsum dolor sit amet, consectetur это <q>текст ошибка</q>
+    <blockquote> Lorem ipsum dolor sit amet, consectetur - этот текст ошибка</blockquote>
     </span>
+    <div>
+      <q> Lorem ipsum dolor sit amet, consectetur это текст ошибка </q>
+    </div>
+    <div>
+      <p style="background-color: rgb(199, 238, 184)">
+         <br>Начало сеанса  Название фильма  Жанр</br><br>10.00 Человек-паук Фантастика, боевик, приключения</br><br>12.00  Сабачья жизнь 2  Фентези, драмма, комедия</br>
+         <br>14.00  История игрушек 4  Мульфильм, фентези, комедия</br><br>16.00  Люди в Черном. Интернешнл.  Фантастика, боевик, комедия</br>  
+      </p>
+    </div>
+  <img src="./images/REV_poster_B-final 1.png" alt="Постер Выживший"> 
+
   </body>
+  <footer>
+    <div style="position: absolute; width: 1126px; height: 362px; left: 10px; top: 6361px; background: #A3CC40;">
+    <div style="position: absolute, 50px 100px; background: #A3CC40;">
+      <nav>
+      <a href="images/REV_poster_B-final 1.png">Постер фильма "Выживший"</a>
+    </div>
+    </nav>
+    </div>
+    
+  </footer>
 </html>
