@@ -1,13 +1,19 @@
-.head-fonts{
-    color: rgb(255, 255, 255);
-    font-family: "IBM-Plex-Sens";
-    src: url("./fonts/IBMPlexSans-Light.ttf");
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    text-align: center;
+.head-fonts {
+  color: rgb(255, 255, 255);
+  font-family: "IBM-Plex-Sens";
+  src: url("./fonts/IBMPlexSans-Light.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
 }
-.back-ground-body{
-    background-image: url("/images/up-background.png");
-    background-color: gray;
+.back-ground-body {
+  background: rgba(22, 22, 22, 0.8);
+  background-image: url("/images/up-background.png");
+  position: absolute;
+  width: 1171px;
+  height: 728px;
+  left: 0px;
+  top: 0px;
+  
 }
