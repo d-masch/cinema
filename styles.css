@@ -1,5 +1,6 @@
 .head-fonts {
-  color: rgb(255, 255, 255);
+  display: inline-block;
+  color: rgb(0, 0, 0);
   font-family: "IBM-Plex-Sens";
   src: url("./fonts/IBMPlexSans-Light.ttf");
   font-style: normal;
@@ -7,13 +8,16 @@
   font-size: 12px;
   text-align: center;
 }
+
 .back-ground-body {
-  background: rgba(22, 22, 22, 0.8);
-  background-image: url("/images/up-background.png");
+  background: no-repeat url("/images/up-background.png");
+  background-size: auto auto;
   position: absolute;
   width: 1171px;
   height: 728px;
-  left: 0px;
-  top: 0px;
-  
+  opacity: 0.9;
 }
+.logo{
+  width: 180px;
+  height: 42px;
+ }
