@@ -1,6 +1,6 @@
 .head-fonts {
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: "IBM-Plex-Sens";
   src: url("./fonts/IBMPlexSans-Light.ttf");
   font-style: normal;
@@ -11,7 +11,7 @@
 
 .back-ground-body {
   background: no-repeat url("/images/up-background.png");
-  background-size: auto auto;
+  background-size: contain;
   position: absolute;
   width: 1171px;
   height: 728px;
