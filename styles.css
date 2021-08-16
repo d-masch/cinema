@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "IBM-Plex-Sens";
+  src: url("./fonts/IBMPlexSans-Medium.ttf");
+}
+@font-face {
+  font-family: "IBM-Plex-Sens-Think";
+  src: url("./fonts/IBMPlexSans-Thin.ttf");
+}
+@font-face {
+  font-family: "IBM-Plex-Sens-Light";
+  src: url("./fonts/IBMPlexSans-ExtraLight.ttf");
+}
+
 .head-fonts {
   display: inline-block;
   color: rgb(255, 255, 255);
@@ -17,7 +30,21 @@
   height: 728px;
   opacity: 0.9;
 }
+
 .logo{
   width: 180px;
   height: 42px;
+ }
+
+ .table {
+  width: 300px; /* Ширина таблицы */
+  border-collapse: collapse; /* Убираем двойные линии между ячейками */
+ }
+ .tr {
+  padding: 3px; /* Поля вокруг содержимого таблицы */
+  border: 1px solid black; /* Параметры рамки */
+ }
+ .th {
+  border: 1px solid black; /* Параметры рамки */
+  background: rgb(122, 122, 122);/* Цвет фона */
  }
