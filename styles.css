@@ -21,6 +21,15 @@
   font-size: 12px;
   text-align: center;
 }
+.table-fonts {
+  color: rgb(255, 255, 255);
+  font-family: "IBM-Plex-Sens";
+  src: url("./fonts/IBMPlexSans-Light.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
 
 .back-ground-body {
   background: no-repeat url("/images/up-background.png");
@@ -40,11 +49,9 @@
   width: 300px; /* Ширина таблицы */
   border-collapse: collapse; /* Убираем двойные линии между ячейками */
  }
- .tr {
-  padding: 3px; /* Поля вокруг содержимого таблицы */
-  border: 1px solid black; /* Параметры рамки */
+ .text-gift {
+  text-align: right; /*выравнивание текста по правому краю*/
  }
- .th {
-  border: 1px solid black; /* Параметры рамки */
-  background: rgb(122, 122, 122);/* Цвет фона */
+ .get-gift {
+  background-color: rgb(163, 204, 64);
  }
