@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Tickets to Cinema</title>
     <!--подключение файла css-->
+    <link rel="stylesheet" type="text/css" href="fonts.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
      td {
@@ -14,12 +15,16 @@
         border: #000 solid 1px;
         text-align: center;
      }
+     a { 
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+     }
     </style>
   </head>
-  <body>
+  <body link="white" vlink="white" alink="white">
     <div class="back-ground-body">
+      <!--логотип-->
       <div style="float: left; background-color: transparent">
-        <a href="http://university.innopolis.ru"> 
+        <a href="http://university.innopolis.ru" target="_blank"> 
         <svg class="logo" style="margin: 50px 0px 0px 50px">
           <use xlink:href="#logo"></use>
         </svg>
@@ -33,11 +38,14 @@
           <a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a>
         </div>
         <div class="head-fonts" style="margin: 20px 30px 10px 30px">
-          ул. Спортивная, д.1
+          <a href="#"> ул. Спортивная, д.1 </a>
         </div>
-        <div class="head-fonts" style="margin: 20px 30px 10px 30px">
+        <!-- кнопка заказать звонок-->
+        <div class="head-fonts" class="icon-button" style="margin: 20px 30px 10px 30px">
           <form action="/order">
-            <button type="button">Заказать звонок</button>
+            <button type="button">
+            <img src="./images/telephon.png"> Заказать звонок
+            </button>
           </form>
         </div>
       </div>
@@ -90,26 +98,26 @@
           <div style="text-align: center;">
             <h1> Добро пожаловать ! </h1>
           </div>
-          <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
+          <h5><i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
             sed do eiusmod tempor incididunt ut labore et dolore </br>magna aliqua. 
-            Ut enim ad minim veniam. </h5>
-          <h5>Duis aute irure dolor in reprehenderit in voluptate velit</br> esse 
+            Ut enim ad minim veniam.</i> </h5>
+          <h5><b>Duis aute irure dolor in reprehenderit in voluptate velit</br> esse 
             cillum dolore eu fugiat nulla pariatur. Excepteur sint </br> occaecat cupidatat 
-            non proident, sunt.</h5>
+            non proident, sunt.</b></h5>
         </div>
       </div>
     </div>
 
     <div style="border: solid 1pt; color: #000;">
-      <div style="float:left; margin: 80px 20px 20px 20px; width: 250px;">
-        <img src="./images/big screen.png">
+      <div style="float: left; margin: 60px 20px 20px 20px; width: 250px; border: 1px solid rgb(0, 0, 0);">
+        <img src="./images/big screen.png" alt="Большие экраны">
         <div style="text-align: center; font-size: 25px;">
           <p>Большие экраны</p>
         </div>
         <p>Lorem, ipsum dolor sit amet consectetur </br> adipisicing elit. Dolores repellendus autem,</br> recusandae facere fugiat dolorum tempora </br> cumque at voluptatum ex est vel asperiores</br> error et ab tempore libero culpa exercitationem!</p>
       </div>
       
-      <div style="display: inline-block; margin: 80px 20px 20px 20px; width: 250px;">
+      <div style="display: inline-block; margin: 60px 20px 20px 20px; width: 250px; border: 1px solid rgb(0, 0, 0);">
         <img src="./images/obemniy_zvuk-1200x900 1.png"  style="height: 169; width: 245;">
         <div style="text-align: center; font-size: 25px;">
           <p>Объёмный звук</p>
@@ -117,7 +125,7 @@
         <p>Lorem, ipsum dolor sit amet consectetur </br> adipisicing elit. Dolores repellendus autem,</br> recusandae facere fugiat dolorum tempora </br> cumque at voluptatum ex est vel asperiores</br> error et ab tempore libero culpa exercitationem!</p>
       </div>
       
-      <div style="display: inline-block; margin: 80px 20px 20px 20px; width: 250px;">
+      <div style="display: inline-block; margin: 60px 20px 20px 20px; width: 250px; border: 1px solid rgb(0, 0, 0);">
         <img src="./images/comfort chairs.png">
         <div style="text-align: center; font-size: 25px;">
           <p>Удобные кресла !</p>
@@ -172,28 +180,28 @@
             <tbody style=" background-color: rgb(30, 30, 30); color: rgb(255, 255, 255);">
              <tr>
                <td> 10.00</td>
-               <td>Человек-паук</td>
+               <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек паук</a></td>
                <td>Фантастика, боевик, приключения</td>
              </tr>
             </tbody>
             <tbody style=" background-color: dimgray; color: rgb(255, 255, 255);">
               <tr>
                  <td > 12.00</td>
-                 <td>Собачья жизнь</td>
+                 <td><a href="https://www.kinopoisk.ru/film/571896/" target="_blank"> Собачья жизнь</a></td>
                  <td>Фентази, драмма, комедия</td>
               </tr>
             </tbody>
             <tbody style=" background-color: rgb(30, 30, 30); color: rgb(255, 255, 255);">
               <tr>
                  <td> 14.00</td>
-                 <td>История Игрушек-4</td>
+                 <td><a href="https://www.kinopoisk.ru/film/846824/" target="_blank"> История игрушек - 4</a></td>
                  <td>Мультфильмы, фентези, комедия</td>
               </tr>
             </tbody>
             <tbody style=" background-color: dimgray; color: rgb(255, 255, 255);">
               <tr>
                 <td> 16.00</td>
-                <td>Люди в Черном: Интернешнл</td>
+                <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank"> Люди в черном: Интернешнел</a></td>
                 <td>Фантастика, боевик, комедия</td>
               </tr>
             </tbody>
@@ -208,6 +216,8 @@
           </table>
         </div>
       </div><!--конец таблицы с фильмами-->
+
+      <!--блок получить подарок-->
       <div style="float:left; margin-top:90px; border: 1px solid rgb(0, 0, 0); height: 660px; width: 1171px; background-image: url(./images/Backgroound\ Picture\ -\ 2.jpg);">
        
             <div style="float: left; width: 490px; height: 587px; border: 1px solid rgb(0, 0, 0); align-items: center;">
@@ -218,9 +228,8 @@
                   <p>Подарок каждому !</p>
               </div>
               <div class="text-gift" style="padding: 20px 60px; font-size: 12px; color:rgb(255, 255, 255); width: 550px; ">
-        
-                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.</br> Ut pharetra sit amet aliquam id diam maecenas. 
-                  Nunc vel risus commodo viverra maecenas accumsan.</p>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.</br> <i>Ut pharetra sit amet aliquam id diam maecenas. 
+                  Nunc vel risus commodo viverra maecenas accumsan.</i></p>
                   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.</br> Ut pharetra sit amet aliquam id diam maecenas. 
                     Nunc vel risus commodo viverra maecenas accumsan.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
@@ -237,10 +246,131 @@
               </form>
             </div>
       </div>
-
     </div> 
+    <!--фильмы-->
+    <div>
+      <div style="margin: 50px 20px 20px 20px; font-size: 40px; color:  rgb(163, 204, 64);">
+        Фильмы
+      </div>
+      <section style="padding: 50px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
+       </section>
+    </div>
+    <div class="other-fonts" style="background-color: grey;">
+      <div>
+         <div style="float: left; width: 30%;">
+              выживший
+         </div>
+         <div style="display: inline-block; width: 30%;">
+               Лёд
+         </div>
+        <div style="display: inline-block; width: auto;">
+               Марсианин
+        </div>
+      </div>
+      <div>
+        <div style="float: left; width: 30%;">
+             картинка
+        </div>
+        <div style="display: inline-block; width: 30%;">
+              Картинка
+        </div>
+       <div style="display: inline-block; width: auto;">
+              Территория
+       </div>
+     </div>
+     <div>
+      <div style="float: left; width: 30%;">
+           Картинка
+      </div>
+      <div style="display: inline-block; width: 30%;">
+            Смит
+      </div>
+     <div style="display: inline-block; width: auto;">
+            Живое
+     </div>
+   </div>
 
-    
+   </div>
+   <!--товары-->
+  <div>
+    <div style="margin: 50px 20px 20px 20px; font-size: 40px; color:  rgb(163, 204, 64);">
+      Товары
+    </div>
+    <section style="padding: 50px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
+     </section>
+     <div > <!-- фото товаров -->
+            <div style="display: inline-block;">
+              <img src="./images/Coca Cola.jpg" alt="Coca-Cola">
+            </div>
+            <div style="display: inline-block;">
+              <img src="./images/Coca Cola.jpg" alt="Coca-Cola">
+            </div>
+            <div style="display: inline-block;">
+              <img src="./images/Coca Cola.jpg" alt="Coca-Cola">
+            </div>
+     </div>
+  </div>
+  <div>
+    <div style="margin: 50px 20px 20px 20px; font-size: 40px; color:  rgb(163, 204, 64);">
+      Отзывы
+    </div>
+    <section style="padding: 50px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
+     </section>
+     <div > <!-- фото товаров -->
+            <div style="display: inline-block;">
+              <img src="#" alt="фото">
+            </div>
+            <div style="display: inline-block;">
+              <img src="#" alt="фото">
+            </div>
+            <div style="display: inline-block;">
+              <img src="#" alt="фото">
+            </div>
+     </div>
+  </div>
+  <!--обратная связь-->
+  <div style="padding: 50px; width: 600px; align-items: center;">
+    <div>
+      Обратная связь
+    </div>
+
+  </div>
+
+    <footer>
+       <div class="footer-fonts" style="float: left; width: 1171px; background-color: rgb(163, 204, 64); border: 1px solid #000;">
+        <!--лого в футере-->
+        <div style="float: left; width: 300px; padding: 0px 200px 0px 20px; background-color: transparent; align-items: baseline;">
+          <a href="http://university.innopolis.ru" target="_blank"> 
+          <svg class="logo" style="margin: 70px 50px 30px 50px">
+            <use xlink:href="#logo"></use>
+          </svg>
+           </a>
+           <section style="padding: 50px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
+           </section>
+        </div>
+        <div style="padding: 80px 30px; display: inline-block; width: 250px;" >
+          <h2>SITE</h2>
+          <h4><a href="#"> EVENT DETAILS</a></h4>
+          <h4><a href="#"> SPEAKERS</a></h4>
+          <h4><a href="#"> SPONSORS</a></h4>
+          <h4><a href="#"> PAST EVENTS</a></h4>
+          <h4><a href="#"> CONTACT</a></h4>
+        </div>
+        <div style=" padding: 80px 30px; float: right;  width: 255px;" >
+          <h2>CONTACT</h2>
+          <h4><a href="tel:+7831000000"> tel: +7831000000 </a></h4>
+          <h4><a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a></h4>
+          <h4><a href="#"> 420500, г. Иннополис </br> ул.Университетская, д.1</a></h4>
+          <h4><a href="#"> Как добраться</a></h4>
+          <h4><a href="#"> Все контакты</a></h4>
+        </div>
+       </div>
+     </footer>
+
     <!--Логотип Университета Иннополис-->
     <svg style="display: none">
       <symbol
