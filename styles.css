@@ -28,6 +28,7 @@
   font-weight: 500;
   font-size: 12px;
   text-align: center;
+  border-collapse: collapse;
 }
 .footer-fonts {
   color: rgb(255, 255, 255);

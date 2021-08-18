@@ -30,7 +30,7 @@
         </svg>
       </a>
       </div>
-      <div style="display: inline-block">
+      <nav style="display: inline-block">
         <div class="head-fonts" style="margin: 20px 30px 10px 50px";> 
           <a href="tel:+7831000000"> tel: +7831000000 </a>
         </div>
@@ -48,7 +48,7 @@
             </button>
           </form>
         </div>
-      </div>
+      </nav>
 
       <div style="display: inline-block">
         <div class="head-fonts" style="margin: 25px 40px 10px 30px">
@@ -64,7 +64,7 @@
           <a name="id= "> прошлые события </a>
         </div>
         <div class="head-fonts" style="margin: 25px 40px 10px 30px">
-          <a name="id= "> контакты </a>
+          <a href="#contacts"> контакты </a>
         </div>
       </div>
 
@@ -166,13 +166,13 @@
       </div>
 
      <div><!--таблица с фильмами-->
-        <div style="float: left; margin: 0px, 200px;">
+        <div style="float: left; margin: 0px, 200px; border-radius: 30px;">
         </div>
         <div style="color: #000; display: inline-block;"> 
           <table class="table" style="width: 800px">
             <thead style=" background-color: rgb(163, 204, 64); color: rgb(255, 255, 255); font-size: 15px;">
               <tr>
-               <th>начало сеанса</th>
+               <th style="border-radius: 15px 0 0 0;"> начало сеанса</th>
                <th>название фильма</th>
                <th>жанр</th>
               </tr>
@@ -319,25 +319,40 @@
     <section style="padding: 50px;">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
      </section>
-     <div > <!-- фото товаров -->
+     <div > <!-- фото благадарных клиентов-->
             <div style="display: inline-block;">
-              <img src="#" alt="фото">
+              <img src="#" alt="фото чела">
             </div>
             <div style="display: inline-block;">
-              <img src="#" alt="фото">
+              <img src="#" alt="фото чела">
             </div>
             <div style="display: inline-block;">
-              <img src="#" alt="фото">
+              <img src="#" alt="фото чела">
             </div>
      </div>
   </div>
   <!--обратная связь-->
   <div style="padding: 50px; width: 600px; align-items: center;">
+    <form action="/order" method="">
     <div>
       Обратная связь
     </div>
-
+    <div>  
+      <input type="text" required placeholder="введите полное имя">
+    </div>
+    <div>  
+      <input type="number" required placeholder="номер места">
+    </div>
+    <div>  
+      <input type="text" placeholder="напишите сюда свой отзыв">
+    </div>
+    <button type="submit"> отправить</button>
+  </form>
   </div>
+  <!-- карта -->
+    <div style="padding: 30px; background-color: darkgreen;">
+       <h2> КАРТА  </h2>
+    </div>
 
     <footer>
        <div class="footer-fonts" style="float: left; width: 1171px; background-color: rgb(163, 204, 64); border: 1px solid #000;">
@@ -360,7 +375,7 @@
           <h4><a href="#"> PAST EVENTS</a></h4>
           <h4><a href="#"> CONTACT</a></h4>
         </div>
-        <div style=" padding: 80px 30px; float: right;  width: 255px;" >
+        <div id="contacts" style=" padding: 80px 30px; float: right;  width: 255px;" >
           <h2>CONTACT</h2>
           <h4><a href="tel:+7831000000"> tel: +7831000000 </a></h4>
           <h4><a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a></h4>
