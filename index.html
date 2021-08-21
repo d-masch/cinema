@@ -18,6 +18,9 @@
      a { 
         text-decoration: none; /* Отменяем подчеркивание у ссылки */
      }
+     textarea{
+       resize: none;
+     }
     </style>
   </head>
   <body link="white" vlink="white" alink="white">
@@ -30,7 +33,7 @@
         </svg>
       </a>
       </div>
-      <nav style="display: inline-block">
+      <nav style="display: inline-block"> <!-- меню -->
         <div class="head-fonts" style="margin: 20px 30px 10px 50px";> 
           <a href="tel:+7831000000"> tel: +7831000000 </a>
         </div>
@@ -71,23 +74,23 @@
       <div
         style="
           font-family: IBM-Plex-Sens-Think;
-          font-size: 68px;
+          font-size: 40px;
           font-weight: 100;
           margin-top: 200px;
           text-align: center;
           color: rgb(255, 255, 255);
         ">
-        Закажите билет в кино
+        <h1>Закажите билет в кино</h1>
       </div>
       <div
         style="
           font-family: IBM-Plex-Sens;
-          font-size: 40px;
+          font-size: 20px;
           margin-top: 19px;
           text-align: center;
           color: rgb(255, 255, 255);
         ">
-        Всем покупателям подарок !
+        <h2>Всем покупателям подарок !</h2>
       </div>
     <div>
       <div style="margin-top: 80px;">
@@ -118,7 +121,7 @@
       </div>
       
       <div style="display: inline-block; margin: 60px 20px 20px 20px; width: 250px; border: 1px solid rgb(0, 0, 0);">
-        <img src="./images/obemniy_zvuk-1200x900 1.png"  style="height: 169; width: 245;">
+        <img src="./images/obemniy_zvuk-1200x900 1.png" alt="Объёмный звук"  style="height: 169; width: 245;">
         <div style="text-align: center; font-size: 25px;">
           <p>Объёмный звук</p>
         </div>
@@ -126,7 +129,7 @@
       </div>
       
       <div style="display: inline-block; margin: 60px 20px 20px 20px; width: 250px; border: 1px solid rgb(0, 0, 0);">
-        <img src="./images/comfort chairs.png">
+        <img src="./images/comfort chairs.png" alt="Удобные кресла">
         <div style="text-align: center; font-size: 25px;">
           <p>Удобные кресла !</p>
         </div>
@@ -136,7 +139,7 @@
 
     <div style="border: solid 1pt; color: #000;">
       <div style="float: left; margin: 80px 20px 20px 20px; width: 250px;">
-        <img src="./images/atmosfer.png">
+        <img src="./images/atmosfer.png" alt="Уютная атмосфера">
         <div style="text-align: center; font-size: 25px;">
           <p>Уютная атмосфера</p>
         </div>
@@ -144,7 +147,7 @@
       </div>
       
       <div style="display: inline-block; margin: 80px 20px 20px 20px; width: 250px;">
-        <img src="./images/full sub.png" style="height: 169; width: 245;">
+        <img src="./images/full sub.png" alt="Полное погружение" style="height: 169; width: 245;">
         <div style="text-align: center; font-size: 25px;">
           <p>Полное погружение</p>
          </div>
@@ -152,7 +155,7 @@
       </div>
      
       <div style="display: inline-block; margin: 80px 20px 20px 20px; width: 250px;">
-        <img src="./images/kisses.png">
+        <img src="./images/kisses.png" alt="Поцелуи на задних рядах">
         <div style="text-align: center; font-size: 25px;">
           <p>Поцелуи на задних рядах</p>
         </div>
@@ -169,7 +172,7 @@
         <div style="float: left; margin: 0px, 200px; border-radius: 30px;">
         </div>
         <div style="color: #000; display: inline-block;"> 
-          <table class="table" style="width: 800px">
+          <table class="table" style="margin-left: auto; margin-right: auto;">
             <thead style=" background-color: rgb(163, 204, 64); color: rgb(255, 255, 255); font-size: 15px;">
               <tr>
                <th style="border-radius: 15px 0 0 0;"> начало сеанса</th>
@@ -249,48 +252,55 @@
     </div> 
     <!--фильмы-->
     <div>
-      <div style="margin: 50px 20px 20px 20px; font-size: 40px; color:  rgb(163, 204, 64);">
-        Фильмы
+    <div>
+      <div style="margin: 50px 20px 20px 20px; font-size: 20px; color:  rgb(163, 204, 64);">
+        <h2>Фильмы</h2>
       </div>
       <section style="padding: 50px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
        </section>
     </div>
-    <div class="other-fonts" style="background-color: grey;">
-      <div>
-         <div style="float: left; width: 30%;">
-              выживший
-         </div>
-         <div style="display: inline-block; width: 30%;">
-               Лёд
-         </div>
-        <div style="display: inline-block; width: auto;">
-               Марсианин
+   
+        <div class="other-fonts" style="background-color: grey; width: 850px;">
+      
+              <div style="float: left; width: 33%;">
+                  <img src="./images/movie 1.png" alt="movie 1">
+                  <h5>выживший</h5>
+              </div>
+              <div style="display: inline-block; width: 33%;">
+                  <img src="./images/movie 2.jpg" alt="movie 2">
+                  <h5>выживший</h5>
+              </div>
+              <div style="display: inline-block; width:auto;">
+                  <img src="./images/movie 3.jpg" alt="movie 3">
+                  <h5>выживший</h5>
+              </div>
+              <div style="float: left; width: 33%;">
+                   <img src="./images/movie 4.jpg" alt="movie 4">
+                   <h5>выживший</h5>
+              </div>
+              <div style="display: inline-block; width: 33%;">
+                    <img src="./images/movie 5.jpg" alt="movie 5">
+                    <h5>выживший</h5>
+              </div>
+              <div style="display: inline-block; width: auto;">
+                    <img src="./images/movie 6.jpg" alt="movie 6">
+                    <h5>выживший</h5>
+              </div>
+              <div style="float: left; width: 33%;">
+                <img src="./images/movie 7.jpg" alt="movie 7">
+                <h5>выживший</h5>
+              </div>
+              <div style="display: inline-block; width: 33%;">
+                 <img src="./images/movie 8.jpg" alt="movie 8">
+                 <h5>выживший</h5>
+              </div>
+              <div style="display: inline-block; width: auto;">
+                     <img src="./images/movie 9.jpg" alt="movie 9">
+                     <h5>выживший</h5>
+              </div>
         </div>
-      </div>
-      <div>
-        <div style="float: left; width: 30%;">
-             картинка
-        </div>
-        <div style="display: inline-block; width: 30%;">
-              Картинка
-        </div>
-       <div style="display: inline-block; width: auto;">
-              Территория
-       </div>
-     </div>
-     <div>
-      <div style="float: left; width: 30%;">
-           Картинка
-      </div>
-      <div style="display: inline-block; width: 30%;">
-            Смит
-      </div>
-     <div style="display: inline-block; width: auto;">
-            Живое
-     </div>
-   </div>
-
+    
    </div>
    <!--товары-->
   <div>
@@ -305,18 +315,18 @@
               <img src="./images/Coca Cola.jpg" alt="Coca-Cola">
             </div>
             <div style="display: inline-block;">
-              <img src="./images/Coca Cola.jpg" alt="Coca-Cola">
+              <img src="./images/Keychain iron man.jpg" alt="Iron Man">
             </div>
             <div style="display: inline-block;">
-              <img src="./images/Coca Cola.jpg" alt="Coca-Cola">
+              <img src="./images/The Avengers poster.jpg" alt="The Avengers">
             </div>
      </div>
   </div>
   <div>
-    <div style="margin: 50px 20px 20px 20px; font-size: 40px; color:  rgb(163, 204, 64);">
-      Отзывы
+    <div class="body-fonts" style="margin: 50px 20px 20px 20px; color:  rgb(163, 204, 64);">
+      <h1>Отзывы</h1>
     </div>
-    <section style="padding: 50px;">
+    <section class="body-fonts" style="padding: 50px;">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
      </section>
      <div > <!-- фото благадарных клиентов-->
@@ -332,25 +342,41 @@
      </div>
   </div>
   <!--обратная связь-->
-  <div style="padding: 50px; width: 600px; align-items: center;">
-    <form action="/order" method="">
+  <div class="body-fonts" style="padding: 50px; width: 600px; align-items: center; border:1px solid #000;">
+    <form class="body-fonts" action="/order" method="">
     <div>
-      Обратная связь
+      <h1>Обратная связь</h1>
     </div>
     <div>  
       <input type="text" required placeholder="введите полное имя">
     </div>
-    <div>  
-      <input type="number" required placeholder="номер места">
+    <div> 
+      <select name="" required>
+        <option value="">не выбрано</option>
+        <option value="1">место 1</option>
+        <option value="2">место 2</option>
+        <option value="3">место 3</option>
+        <option value="4">место 4</option>
+        <option value="5">место 5</option>
+        <option value="5">место 6</option>
+        <option value="5">место 7</option>
+        <option value="5">место 8</option>
+        <option value="5">место 9</option>
+        <option value="5">место 10</option>
+      </select>
     </div>
     <div>  
-      <input type="text" placeholder="напишите сюда свой отзыв">
+      <textarea name="" id="" placeholder="введите сюда свой отзыв"></textarea>
+    </div>
+    <div>
+      <input type="checkbox" id="checkbox" >
+      <label for="checkbox">Я согласен на обработку своих персональных данных</label>
     </div>
     <button type="submit"> отправить</button>
   </form>
   </div>
   <!-- карта -->
-    <div style="padding: 30px; background-color: darkgreen;">
+    <div class="body-fonts" style="padding: 30px; background-color: darkgreen;">
        <h2> КАРТА  </h2>
     </div>
 
