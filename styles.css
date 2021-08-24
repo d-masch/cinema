@@ -62,8 +62,10 @@
  }
 
  .table {
-  width: 500px; /* Ширина таблицы */
-  border-collapse: collapse; /* Убираем двойные линии между ячейками */
+  width: 800px; /* Ширина таблицы */
+  border-collapse: collapse;
+  border: white;
+ 
  }
  .text-gift {
   text-align: right; /*выравнивание текста по правому краю*/

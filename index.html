@@ -8,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
      td {
-        border: #000 solid 1px;
+        border: none;
         text-align: center;
      }
      th {
-        border: #000 solid 1px;
+        border: none;
         text-align: center;
      }
      a { 
@@ -163,25 +163,66 @@
       </div>
     </div>
     
+    <!-- блок к изучению шагов 9-11 работа со списками -->
+    <div>
+      <ul> <!-- маркированные списки -->
+        <li> Link1</li>
+        <li> Link2</li>
+        <li> Link3</li>
+      </ul>
+      <ul style="list-style: upper-latin;">
+        <li> Link1</li>
+        <li> Link2</li>
+        <li> Link3</li>
+      </ul>
+      <dl> <!--список описаний-->
+        <dt>Name of Links</dt>
+        <dd>Link1</dd>
+        <dd>Link2</dd>
+        <dd>Link3</dd>
+      </dl>
+      <ol start="5" reversed> <!-- нумерованный список начинается с 5 в обратном порядке-->
+        <li> Link1</li>
+        <li> Link2</li>
+        <li> Link3</li>
+      </ol>
+      <ol type="I"> <!-- нумерованный список латинские цифры-->
+        <li> Link1</li>
+        <li> Link2</li>
+        <li> Link3</li>
+      </ol>
+
+    </div>
+
+
+
+
     <div class="head-fonts">
       <div style="margin: 50px 20px 20px 20px; font-size: 40px; color:  rgb(163, 204, 64);">
         Выберите фильм
       </div>
-
      <div><!--таблица с фильмами-->
-        <div style="float: left; margin: 0px, 200px; border-radius: 30px;">
+        <div style="float: left; margin: 0px, 200px;">
         </div>
         <div style="color: #000; display: inline-block;"> 
-          <table class="table" style="margin-left: auto; margin-right: auto;">
+          <table  class="table" style="margin-left: auto; margin-right: auto;">
+            <colgroup>
+               <col style="width: 10%;">
+               <col style="width: 30%;">
+               <col style="width: 30%;">
+               <col style="width: 30%;">
+            </colgroup>
             <thead style=" background-color: rgb(163, 204, 64); color: rgb(255, 255, 255); font-size: 15px;">
               <tr>
-               <th style="border-radius: 15px 0 0 0;"> начало сеанса</th>
+               <th style="border-radius: 10px 0 0 0; "></th>
+               <th> начало сеанса</th>
                <th>название фильма</th>
-               <th>жанр</th>
+               <th style="border-radius: 0 10px 0 0; ">жанр</th>
               </tr>
             </thead>
             <tbody style=" background-color: rgb(30, 30, 30); color: rgb(255, 255, 255);">
              <tr>
+               <td></td>
                <td> 10.00</td>
                <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек паук</a></td>
                <td>Фантастика, боевик, приключения</td>
@@ -189,6 +230,7 @@
             </tbody>
             <tbody style=" background-color: dimgray; color: rgb(255, 255, 255);">
               <tr>
+                <td></td>
                  <td > 12.00</td>
                  <td><a href="https://www.kinopoisk.ru/film/571896/" target="_blank"> Собачья жизнь</a></td>
                  <td>Фентази, драмма, комедия</td>
@@ -196,6 +238,7 @@
             </tbody>
             <tbody style=" background-color: rgb(30, 30, 30); color: rgb(255, 255, 255);">
               <tr>
+                <td></td>
                  <td> 14.00</td>
                  <td><a href="https://www.kinopoisk.ru/film/846824/" target="_blank"> История игрушек - 4</a></td>
                  <td>Мультфильмы, фентези, комедия</td>
@@ -203,9 +246,10 @@
             </tbody>
             <tbody style=" background-color: dimgray; color: rgb(255, 255, 255);">
               <tr>
+                <td style="border-radius: 0 0 0 10px; "></td>
                 <td> 16.00</td>
                 <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank"> Люди в черном: Интернешнел</a></td>
-                <td>Фантастика, боевик, комедия</td>
+                <td style="border-radius: 0 0 10px 0; ">Фантастика, боевик, комедия</td>
               </tr>
             </tbody>
             <tfoot style="font-size: 9px; ">
@@ -312,13 +356,13 @@
      </section>
      <div > <!-- фото товаров -->
             <div style="display: inline-block;">
-              <img src="./images/Coca Cola.jpg" alt="Coca-Cola">
+              <img src="./images/Coca Cola.jpg" alt="Напиток Coca-Cola">
             </div>
             <div style="display: inline-block;">
-              <img src="./images/Keychain iron man.jpg" alt="Iron Man">
+              <img src="./images/Keychain iron man.jpg" alt="Брелоки Iron Man">
             </div>
             <div style="display: inline-block;">
-              <img src="./images/The Avengers poster.jpg" alt="The Avengers">
+              <img src="./images/The Avengers poster.jpg" alt="Постер Мстители">
             </div>
      </div>
   </div>
@@ -331,26 +375,26 @@
      </section>
      <div > <!-- фото благадарных клиентов-->
             <div style="display: inline-block;">
-              <img src="#" alt="фото чела">
+              <img src="#" alt="фото человека">
             </div>
             <div style="display: inline-block;">
-              <img src="#" alt="фото чела">
+              <img src="#" alt="фото человека">
             </div>
             <div style="display: inline-block;">
-              <img src="#" alt="фото чела">
+              <img src="#" alt="фото человека">
             </div>
      </div>
   </div>
   <!--обратная связь-->
   <div class="body-fonts" style="padding: 50px; width: 600px; align-items: center; border:1px solid #000;">
-    <form class="body-fonts" action="/order" method="">
-    <div>
+    <form class="body-fonts" action="/order" method="" id="form1">
+     <div>
       <h1>Обратная связь</h1>
-    </div>
-    <div>  
-      <input type="text" required placeholder="введите полное имя">
-    </div>
-    <div> 
+     </div>
+     <div>  
+      <input type="text" required placeholder="введите полное имя" name="" >
+     </div>
+     <div> 
       <select name="" required>
         <option value="">не выбрано</option>
         <option value="1">место 1</option>
@@ -364,17 +408,27 @@
         <option value="5">место 9</option>
         <option value="5">место 10</option>
       </select>
-    </div>
-    <div>  
-      <textarea name="" id="" placeholder="введите сюда свой отзыв"></textarea>
-    </div>
-    <div>
-      <input type="checkbox" id="checkbox" >
+     </div>
+     <div>  
+      <textarea name="" id="" placeholder="введите сюда свой отзыв" name=""></textarea>
+     </div>
+     <div>
+      <input type="checkbox" id="checkbox" name="" >
       <label for="checkbox">Я согласен на обработку своих персональных данных</label>
-    </div>
-    <button type="submit"> отправить</button>
-  </form>
+     </div>
+     <div>
+      <input type="file" placeholder="выберите файл"> <!--для учебных целей-->
+     </div>
+     <div>
+      <input type="email" placeholder="введите электронную почту" required name=""> <!--для учебных целей-->
+     </div>
+    <!--<button type="submit"> отправить</button>-->
+   </form>
+  <input form="form1" type="submit" value="заказать" >
   </div>
+
+
+
   <!-- карта -->
     <div class="body-fonts" style="padding: 30px; background-color: darkgreen;">
        <h2> КАРТА  </h2>
