@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <title>Tickets to Cinema</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-"/>
     <!--подключение файла css-->
     <link rel="stylesheet" type="text/css" href="fonts.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <style>
-     td {
-        border: none;
-        text-align: center;
-     }
-     th {
-        border: none;
-        text-align: center;
-     }
-     a { 
-        text-decoration: none; /* Отменяем подчеркивание у ссылки */
-     }
-     textarea{
-       resize: none;
-     }
+     
+    
+     
+     
+     
     </style>
   </head>
-  <body link="white" vlink="white" alink="white">
+  <body class="a"  link="white" vlink="white" alink="white" >
     <div class="back-ground-body">
       <!--логотип-->
       <div style="float: left; background-color: transparent">
         <a href="http://university.innopolis.ru" target="_blank"> 
+        <span class="sr-only">Innopolis university</span>
         <svg class="logo" style="margin: 50px 0px 0px 50px">
           <use xlink:href="#logo"></use>
         </svg>
@@ -94,7 +87,7 @@
       </div>
     <div>
       <div style="margin-top: 80px;">
-        <div class="head-fonts" style="float: left; display: inline-block; margin-top: 200px; margin-bottom: 20px; width: 520px; font-size: 35px; color: rgb(12, 207, 12); ">
+        <div class="head-fonts" style="float: left; margin-top: 200px; margin-bottom: 20px; width: 520px; font-size: 35px; color: rgb(12, 207, 12); ">
           Почему мы ?
         </div>
         <div style="width: 350px; height: 200px; padding: 30px; display: inline-block; background-color: white;">
@@ -205,7 +198,7 @@
         <div style="float: left; margin: 0px, 200px;">
         </div>
         <div style="color: #000; display: inline-block;"> 
-          <table  class="table" style="margin-left: auto; margin-right: auto;">
+          <table  class="table, td, th" style="margin-left: auto; margin-right: auto;">
             <colgroup>
                <col style="width: 10%;">
                <col style="width: 30%;">
@@ -387,7 +380,7 @@
   </div>
   <!--обратная связь-->
   <div class="body-fonts" style="padding: 50px; width: 600px; align-items: center; border:1px solid #000;">
-    <form class="body-fonts" action="/order" method="" id="form1">
+    <form class="body-fonts" action="/order" method="">
      <div>
       <h1>Обратная связь</h1>
      </div>
@@ -410,7 +403,7 @@
       </select>
      </div>
      <div>  
-      <textarea name="" id="" placeholder="введите сюда свой отзыв" name=""></textarea>
+      <textarea class="textarea" id="" placeholder="введите сюда свой отзыв" name=""></textarea>
      </div>
      <div>
       <input type="checkbox" id="checkbox" name="" >
@@ -422,9 +415,9 @@
      <div>
       <input type="email" placeholder="введите электронную почту" required name=""> <!--для учебных целей-->
      </div>
-    <!--<button type="submit"> отправить</button>-->
+    <button type="submit">заказать</button>
    </form>
-  <input form="form1" type="submit" value="заказать" >
+
   </div>
 
 

@@ -73,4 +73,29 @@
  .get-gift {
   background-color: rgb(163, 204, 64);
  }
+ .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+.td {
+  border: none;
+  text-align: center;
+}
+.th {
+  border: none;
+  text-align: center;
+}
+.a { 
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+.textarea {
+  resize: none;
+}
  
