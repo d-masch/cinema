@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ru">
   <head>
     <title>Tickets to Cinema</title>
     <meta charset="UTF-8" />
@@ -13,7 +13,8 @@
   </head>
 
 <body class="a">
- <header></header>
+<main>
+  
     <div class="back-ground-body">
       <!--логотип-->
       <nav id="menu">
@@ -68,13 +69,15 @@
       <div
         style="
           font-family: IBM-Plex-Sens-Think;
-          font-size: 40px;
+          font-size: 68px;
           font-weight: 100;
           margin-top: 200px;
           text-align: center;
           color: rgb(255, 255, 255);
         ">
-        <h1>Закажите билет в кино</h1>
+          <header>
+                 <h1>Закажите билет в кино</h1>
+          </header>
       </div>
       <div
         style="
@@ -93,7 +96,7 @@
         </div>
         <div style="width: 350px; height: 200px; padding: 30px; display: inline-block; background-color: white;">
           <div style="text-align: center;">
-            <h1> Добро пожаловать ! </h1>
+            <h3> Добро пожаловать ! </h3>
           </div>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
             sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. 
@@ -107,6 +110,9 @@
     </div>
 
     <div style="border: solid 1pt; color: #000;">
+      <div>
+        <label for="#">label for block</label>
+       </div>
       <div style="float: left; margin: 60px 20px 20px 20px; width: 250px; border: 1px solid rgb(0, 0, 0);">
         <img src="./images/big_screen.png" alt="Большие экраны">
         <div style="text-align: center; font-size: 25px;">
@@ -413,7 +419,8 @@
       <label for="checkbox">Я согласен на обработку своих персональных данных</label>
      </div>
      <div>
-      <input type="file"> <!--для учебных целей-->
+      <input type="file" id="file"> <!--для учебных целей-->
+      <label for="file">выберите файл</label>
      </div>
      <div>
       <input type="email" placeholder="введите электронную почту" required name="#"> <!--для учебных целей-->
@@ -426,7 +433,7 @@
     <div class="body-fonts" style="padding: 30px; background-color: darkgreen;">
        <h2> КАРТА  </h2>
     </div>
-
+  </main>
     <footer>
        <div class="footer-fonts" style="float: left; width: 1171px; background-color: rgb(163, 204, 64); border: 1px solid #000;">
         <!--лого в футере-->
@@ -547,4 +554,5 @@
       </symbol>
     </svg>
   </body>
+
 </html>
