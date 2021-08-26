@@ -3,30 +3,28 @@
   <head>
     <title>Tickets to Cinema</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--подключение файла css-->
     <link rel="stylesheet" type="text/css" href="fonts.css" />
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <style>
-     
-    
-     
-     
-     
+    <style>  
     </style>
   </head>
+
   <body class="a"  link="white" vlink="white" alink="white" >
+ <header></header>
     <div class="back-ground-body">
       <!--логотип-->
+      <nav role="navigation">
       <div style="float: left; background-color: transparent">
-        <a href="http://university.innopolis.ru" target="_blank"> 
-        <span class="sr-only">Innopolis university</span>
-        <svg class="logo" style="margin: 50px 0px 0px 50px">
-          <use xlink:href="#logo"></use>
-        </svg>
-      </a>
+          <a href="http://university.innopolis.ru" target="_blank"> 
+            <span class="sr-only">Innopolis university</span>
+            <svg class="logo" style="margin: 50px 0px 0px 50px">
+               <use xlink:href="#logo"></use>
+            </svg>
+          </a>
       </div>
-      <nav style="display: inline-block"> <!-- меню -->
+      <div style="display: inline-block"> <!-- меню -->
         <div class="head-fonts" style="margin: 20px 30px 10px 50px";> 
           <a href="tel:+7831000000"> tel: +7831000000 </a>
         </div>
@@ -40,11 +38,11 @@
         <div class="head-fonts" class="icon-button" style="margin: 20px 30px 10px 30px">
           <form action="/order">
             <button type="button">
-            <img src="./images/telephon.png"> Заказать звонок
+            <img src="./images/telephon.png" alt="телефонная трубка"> Заказать звонок
             </button>
           </form>
-        </div>
-      </nav>
+         </div>
+      </div>
 
       <div style="display: inline-block">
         <div class="head-fonts" style="margin: 25px 40px 10px 30px">
@@ -62,7 +60,8 @@
         <div class="head-fonts" style="margin: 25px 40px 10px 30px">
           <a href="#contacts"> контакты </a>
         </div>
-      </div>
+      </nav>
+
 
       <div
         style="
@@ -85,7 +84,7 @@
         ">
         <h2>Всем покупателям подарок !</h2>
       </div>
-    <div>
+     <div>
       <div style="margin-top: 80px;">
         <div class="head-fonts" style="float: left; margin-top: 200px; margin-bottom: 20px; width: 520px; font-size: 35px; color: rgb(12, 207, 12); ">
           Почему мы ?
@@ -94,12 +93,12 @@
           <div style="text-align: center;">
             <h1> Добро пожаловать ! </h1>
           </div>
-          <h5><i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
+          <p><i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
             sed do eiusmod tempor incididunt ut labore et dolore </br>magna aliqua. 
-            Ut enim ad minim veniam.</i> </h5>
-          <h5><b>Duis aute irure dolor in reprehenderit in voluptate velit</br> esse 
+            Ut enim ad minim veniam.</i> </p>
+          <p><b>Duis aute irure dolor in reprehenderit in voluptate velit</br> esse 
             cillum dolore eu fugiat nulla pariatur. Excepteur sint </br> occaecat cupidatat 
-            non proident, sunt.</b></h5>
+            non proident, sunt.</b></p>
         </div>
       </div>
     </div>
@@ -207,8 +206,8 @@
             </colgroup>
             <thead style=" background-color: rgb(163, 204, 64); color: rgb(255, 255, 255); font-size: 15px;">
               <tr>
-               <th style="border-radius: 10px 0 0 0; "></th>
-               <th> начало сеанса</th>
+               <th style="border-radius: 10px 0 0 0; ">метка</th>
+               <th>начало сеанса</th>
                <th>название фильма</th>
                <th style="border-radius: 0 10px 0 0; ">жанр</th>
               </tr>
@@ -261,7 +260,7 @@
       <div style="float:left; margin-top:90px; border: 1px solid rgb(0, 0, 0); height: 660px; width: 1171px; background-image: url(./images/Backgroound\ Picture\ -\ 2.jpg);">
        
             <div style="float: left; width: 490px; height: 587px; border: 1px solid rgb(0, 0, 0); align-items: center;">
-                <img src="./images/gift.png">
+                <img src="./images/gift.png" alt="подарок">
             </div>
             <div style="float: right; padding-top: 90px; border: 1px solid rgb(0, 0, 0);">
               <div style="font-size: 40px; color:  rgb(255, 255, 255);">
@@ -282,7 +281,7 @@
             </div>
             <div class="get-gift" style="display: inline-block; height: 30px;">
               <form action="/order" >
-                <button type="button"><h3>Получить подарок</h3></button>
+                <button type="button">Получить подарок</button>
               </form>
             </div>
       </div>
@@ -302,42 +301,42 @@
       
               <div style="float: left; width: 33%;">
                   <img src="./images/movie 1.png" alt="movie 1">
-                  <h5>выживший</h5>
+                  <p>выживший</p>
               </div>
               <div style="display: inline-block; width: 33%;">
                   <img src="./images/movie 2.jpg" alt="movie 2">
-                  <h5>выживший</h5>
+                  <p>выживший</p>
               </div>
               <div style="display: inline-block; width:auto;">
                   <img src="./images/movie 3.jpg" alt="movie 3">
-                  <h5>выживший</h5>
+                  <p>выживший</p>
               </div>
               <div style="float: left; width: 33%;">
                    <img src="./images/movie 4.jpg" alt="movie 4">
-                   <h5>выживший</h5>
+                   <p>выживший</p>
               </div>
               <div style="display: inline-block; width: 33%;">
                     <img src="./images/movie 5.jpg" alt="movie 5">
-                    <h5>выживший</h5>
+                    <p>выживший</p>
               </div>
               <div style="display: inline-block; width: auto;">
                     <img src="./images/movie 6.jpg" alt="movie 6">
-                    <h5>выживший</h5>
+                    <p>выживший</p>
               </div>
               <div style="float: left; width: 33%;">
                 <img src="./images/movie 7.jpg" alt="movie 7">
-                <h5>выживший</h5>
+                <p>выживший</p>
               </div>
               <div style="display: inline-block; width: 33%;">
                  <img src="./images/movie 8.jpg" alt="movie 8">
-                 <h5>выживший</h5>
+                 <p>выживший</p>
               </div>
               <div style="display: inline-block; width: auto;">
                      <img src="./images/movie 9.jpg" alt="movie 9">
-                     <h5>выживший</h5>
+                     <p>выживший</p>
               </div>
         </div>
-    
+    ss
    </div>
    <!--товары-->
   <div>
@@ -385,10 +384,10 @@
       <h1>Обратная связь</h1>
      </div>
      <div>  
-      <input type="text" required placeholder="введите полное имя" name="" >
+      <input type="text" required placeholder="введите полное имя" name="inputed text" >
      </div>
      <div> 
-      <select name="" required>
+      <select aria-label="выбор места" name="choise place" required>
         <option value="">не выбрано</option>
         <option value="1">место 1</option>
         <option value="2">место 2</option>
@@ -432,6 +431,7 @@
         <!--лого в футере-->
         <div style="float: left; width: 300px; padding: 0px 200px 0px 20px; background-color: transparent; align-items: baseline;">
           <a href="http://university.innopolis.ru" target="_blank"> 
+            <span class="sr-only">Innopolis university</span>
           <svg class="logo" style="margin: 70px 50px 30px 50px">
             <use xlink:href="#logo"></use>
           </svg>
@@ -442,19 +442,19 @@
         </div>
         <div style="padding: 80px 30px; display: inline-block; width: 250px;" >
           <h2>SITE</h2>
-          <h4><a href="#"> EVENT DETAILS</a></h4>
-          <h4><a href="#"> SPEAKERS</a></h4>
-          <h4><a href="#"> SPONSORS</a></h4>
-          <h4><a href="#"> PAST EVENTS</a></h4>
-          <h4><a href="#"> CONTACT</a></h4>
+          <a href="#"> EVENT DETAILS</a>
+          <a href="#"> SPEAKERS</a>
+          <a href="#"> SPONSORS</a>
+          <a href="#"> PAST EVENTS</a>
+          <a href="#"> CONTACT</a>
         </div>
         <div id="contacts" style=" padding: 80px 30px; float: right;  width: 255px;" >
           <h2>CONTACT</h2>
-          <h4><a href="tel:+7831000000"> tel: +7831000000 </a></h4>
-          <h4><a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a></h4>
-          <h4><a href="#"> 420500, г. Иннополис </br> ул.Университетская, д.1</a></h4>
-          <h4><a href="#"> Как добраться</a></h4>
-          <h4><a href="#"> Все контакты</a></h4>
+          <a href="tel:+7831000000"> tel: +7831000000 </a>
+          <a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a>
+          <a href="#"> 420500, г. Иннополис </br> ул.Университетская, д.1</a>
+          <a href="#"> Как добраться</a>
+          <a href="#"> Все контакты</a>
         </div>
        </div>
      </footer>
