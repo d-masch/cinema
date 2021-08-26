@@ -9,6 +9,9 @@
   font-size: 12px;
   text-align: center;
 }
+.body-styles { 
+  text-decoration: none;
+}
 .body-fonts { 
   font-family: "IBM-Plex-Sens";
   src: url("./fonts/IBMPlexSans-Light.ttf");
@@ -25,7 +28,7 @@
   font-size: 16px;
 }
 .icon-button {
- background-image: url(./images/telephon.png); 
+ background-image: url("./images/telephon.png"); 
 }
 .table-fonts {
   color: rgb(255, 255, 255);
@@ -50,23 +53,19 @@
 .back-ground-body {
   background: no-repeat url("/images/up-background.png");
   background-size: contain;
-  position: absolute;
   width: 1171px;
   height: 728px;
   opacity: 0.9;
 }
-
 .logo{
   width: 180px;
   height: 42px;
  }
-
  .table {
   width: 800px; /* Ширина таблицы */
   border-collapse: collapse;
   border: white;
- 
- }
+  }
  .text-gift {
   text-align: right; /*выравнивание текста по правому краю*/
  }
