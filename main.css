@@ -19,6 +19,15 @@
   font-weight: 500;
   font-size: 16px;
 }
+.body-heading-fonts { 
+  font-family: "IBM-Plex-Sens";
+  src: url("./fonts/IBMPlexSans-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.3;
+  color:  rgb(163, 204, 64);
+}
 .other-fonts { 
   color: rgb(255, 255, 255);
   font-family: "IBM-Plex-Sens";
@@ -30,16 +39,8 @@
 .icon-button {
  background-image: url("./images/telephon.png"); 
 }
-.table-fonts {
-  color: rgb(255, 255, 255);
-  font-family: "IBM-Plex-Sens";
-  src: url("./fonts/IBMPlexSans-Light.ttf");
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  text-align: center;
-  border-collapse: collapse;
-}
+
+
 .footer-fonts {
   color: rgb(255, 255, 255);
   font-family: "IBM-Plex-Sens";
@@ -61,12 +62,38 @@
   width: 180px;
   height: 42px;
  }
- .table {
-  width: 800px; /* Ширина таблицы */
-  border-collapse: collapse;
-  border: white;
+ /*стили таблицы*/
+ .movie-table {
+  width: 849px;
+
   }
- .text-gift {
+  .table-heading-fonts {
+    color: rgb(255, 255, 255);
+    font-family: "IBM-Plex-Sens";
+    src: url("./fonts/IBMPlexSans-Medium.ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: left; 
+  }
+  .table-fonts {
+    color: rgb(255, 255, 255);
+    font-family: "IBM-Plex-Sens";
+    src: url("./fonts/IBMPlexSans-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: left; 
+  }
+
+/*конец стили таблицы*/
+
+.textarea {
+  resize: none;
+}
+.text-gift {
   text-align: right; /*выравнивание текста по правому краю*/
  }
  .get-gift {
@@ -82,19 +109,4 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
-}
-.td {
-  border: none;
-  text-align: center;
-}
-.th {
-  border: none;
-  text-align: center;
-}
-.a { 
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
-}
-.textarea {
-  resize: none;
-}
- 
+} 
