@@ -1,107 +1,135 @@
-.blok01 {
+.body-styles { 
+  text-decoration: none;
+}
+.bloсk01 {
   background: no-repeat url("/images/up-background.png");
   background-size: contain;
   width: 1124px;
   margin-top: -39px;
   height: 728px;
-  opacity: 0.9;
 }
-.blok01__menu-logo{
+.bloсk01__menu-logo {
   float: left; 
   background-color: transparent 
 }
-
-
-
-
-.head-fonts {
-  display: inline-block;
+.bloсk01__menu-links1 {
   color: rgb(255, 255, 255);
-  font-family: "IBM-Plex-Sens";
-  src: url("./fonts/IBMPlexSans-Medium.ttf");
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'IBM-Plex-Sens-Medium';
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+}
+.bloсk01__menu-links2 {
+  color: rgb(255, 255, 255);
+  font-family: 'IBM-Plex-Sens-Medium';
   font-size: 12px;
   text-align: center;
 }
-.body-styles { 
-  text-decoration: none;
+.bloсk01__ticket {
+  color: rgb(255, 255, 255);
+  font-family: 'IBM-Plex-Sens-Thin';
+  font-size: 68px;
+  margin-top: 144px;
+  text-align: center;
 }
+.bloсk01__giftForAll {
+  font-family: 'IBM-Plex-Sens-Regular';
+  font-size: 41px;
+  margin-top: 33px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.block02 {
+  border: solid 1pt; 
+  color: #000; 
+  width: 1124px; 
+  margin-top: -200px;
+}
+.block02__wellcome {
+margin-bottom: 68px;
+}
+.block02__wellcome-whyme {
+  font-family: 'IBM-Plex-Sens-Medium';
+  font-size: 48px;
+  line-height: 62.4px;
+  color:  rgb(163, 204, 64); 
+  text-align: center; 
+  width: 564px; 
+  
+}
+.block02__wellcome-wellcome{ 
+  font-family: 'IBM-Plex-Sens-Medium';
+  background-color: white;
+  border-radius: 7px;
+  border: solid 1pt rgb(255, 255, 255); 
+  color: #000;
+}
+.body-whyme-heads { 
+  font-family: 'IBM-Plex-Sens-SemiBold';
+  font-size: 20px;
+}
+.body-whyme-text { 
+  font-family: 'IBM-Plex-Sens-Regular';
+  font-size: 11px;
+  line-height: 1.3;
+  text-align: center;
+}
+
 .body-fonts { 
-  font-family: "IBM-Plex-Sens";
-  src: url("./fonts/IBMPlexSans-Light.ttf");
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: 'IBM-Plex-Sens-Medium';
+    font-size: 16px;
 }
 .body-heading-fonts { 
-  font-family: "IBM-Plex-Sens";
-  src: url("./fonts/IBMPlexSans-Medium.ttf");
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'IBM-Plex-Sens-Medium';
   font-size: 48px;
   line-height: 62.4px;
   color:  rgb(163, 204, 64);
 }
 .other-fonts { 
   color: rgb(255, 255, 255);
-  font-family: "IBM-Plex-Sens";
-  src: url("./fonts/IBMPlexSans-Light.ttf");
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'IBM-Plex-Sens-Medium';
   font-size: 16px;
 }
 .icon-button {
  background-image: url("./images/telephon.png"); 
 }
-
-
 .footer-fonts {
   color: rgb(255, 255, 255);
-  font-family: "IBM-Plex-Sens";
-  src: url("./fonts/IBMPlexSans-Light.ttf");
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'IBM-Plex-Sens-Medium';
   font-size: 12px;
   text-align: left;
 }
-
-
 .logo{
   width: 180px;
   height: 42px;
  }
  /*стили таблицы*/
- .movie-table {
+ .block03-movietable-heading {
+  font-family: 'IBM-Plex-Sens-Medium';
+  font-size: 48px;
+  line-height: 62.4px;
+  color:  rgb(163, 204, 64);
+  }
+  .block03-movietable-table {
   width: 849px;
-
   }
   .table-heading-fonts {
     color: rgb(255, 255, 255);
-    font-family: "IBM-Plex-Sens";
-    src: url("./fonts/IBMPlexSans-Medium.ttf");
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'IBM-Plex-Sens-SemiBold';
     font-size: 20px;
-    line-height: 46px;
+    line-height: 2.3;
     text-align: left; 
   }
   .table-fonts {
     color: rgb(255, 255, 255);
-    font-family: "IBM-Plex-Sens";
-    src: url("./fonts/IBMPlexSans-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
+    font-family:'IBM-Plex-Sens-Regular';
     font-size: 14px;
-    line-height: 45.5px;
+    line-height: 3.27;
     text-align: left; 
   }
   .table-footer-fonts {
     color: rgb(0, 0, 0);
-    font-family: "IBM-Plex-Sens";
-    src: url("./fonts/IBMPlexSans-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'IBM-Plex-Sens-Regular';
     font-size: 11px;
     text-align: center;
     line-height: 14.3px;
