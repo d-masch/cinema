@@ -18,21 +18,21 @@
 
 <body>
 <main>
-    <div class="back-ground-body" style="border: #000 1px solid; width: 1124px; height: 728px; margin-top: -39px;">
+    <div class="blok01" style="border: #000 1px solid;">
       <!--логотип-->
-      <nav id="menu">
-      <div style="float: left; background-color: transparent">
-          <a href="http://university.innopolis.ru" target="_blank"> 
-            <span class="sr-only">Innopolis university</span>
-            <svg class="logo" style="margin: 90px 20px 0px 89px">
-               <use xlink:href="#logo"></use>
-            </svg>
-          </a>
-      </div>
-       <div style="display: inline-block"> <!-- меню -->
-         <div class="head-fonts" style="margin: 88px 50px 00px 0px"> 
-            <a href="tel:+7831000000">+7 (800)355 12-56 </a>
-         </div>
+      <nav class="blok01__menu" id="menu">
+          <div class="blok01__menu-logo" style="">
+               <a href="http://university.innopolis.ru" target="_blank"> 
+                   <span class="sr-only">Innopolis university</span>
+                   <svg class="logo" style="margin: 90px 20px 0px 89px">
+                      <use xlink:href="#logo"></use>
+                   </svg>
+               </a>
+          </div>
+          <div style="display: inline-block"> <!-- меню -->
+               <div class="head-fonts" style="margin: 88px 50px 00px 0px"> 
+                    <a href="tel:+7831000000">+7 (800)355 12-56 </a>
+               </div>
         <div class="head-fonts" style="margin: 40px 50px 0px 0px; text-decoration: underline;">
           <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
         </div>
@@ -40,10 +40,12 @@
           <a href="#menu">ул. Спортивная, д.1</a>
         </div>
         <!-- кнопка заказать звонок-->
-        <div class="head-fonts icon-button" style="margin: 0px 60px 0px 0px">
+        <div class="head-fonts icon-button" style="margin: 0px 60px 0px 0px; border-radius: 10px 10px 10px 10px;">
           <form action="/order">
             <button type="button">
-            <img src="./images/telephon.png" alt="телефонная трубка">Заказать звонок
+              <div style="margin:  0px 10px 0px 0px;">
+                <img src="./images/telephon.png" alt="телефонная трубка">    Заказать звонок 
+              </div>         
             </button>
           </form>
          </div>
@@ -175,18 +177,32 @@
             <thead class="table-heading-fonts" style=" background-color: rgb(163, 204, 64);">
                <tr>
                    <th style="border-radius: 10px 0 0 0; "></th>
-                   <th>Начало сеанса
-                     <img src="./images/corner-up.png" alt="стрелка вверх">
+                   <th>
+                     <div style="float:left;">
+                      Начало сеанса
+                     </div>
+                     <div style="display: inline-block; margin-left: 10px;">
+                          <img src="./images/corner-up.png" alt="стрелка вверх">
+                     </div>
                    </th>
-                   <th>Название фильма
-                    <img src="./images/corner-down.png" alt="стрелка вниз">
+                   <th>
+                      <div style="float:left;">
+                          Название фильма
+                      </div>
+                      <div style="display: inline-block; margin-left: 16px;">
+                          <img src="./images/corner-down.png" alt="стрелка вниз">
+                      </div>
                    </th>
                    <th style="border-radius: 0 10px 0 0; ">Жанр</th>
               </tr>
             </thead>
             <tbody class="table-fonts" style="background-color: #373737;">
              <tr>
-               <td style="text-align: center;"> <img src="./images/Stroke.png" alt="галка"></td>
+               <td > 
+                    <div style="margin-left:25px;">
+                         <img src="./images/Stroke.png" alt="галка">
+                    </div>
+              </td>
                <td> 10.00</td>
                <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек паук</a></td>
                <td>Фантастика, боевик, приключения</td>
@@ -194,7 +210,11 @@
             </tbody>
             <tbody class="table-fonts" style=" background-color: #4C4D4F;">
               <tr>
-                <td style="text-align: center;"> <img src="./images/Stroke-green.png" alt="зелёная галка"></td>
+                <td> 
+                    <div style="margin-left:25px;">
+                      <img src="./images/Stroke-green.png" alt="зелёная галка">
+                    </div>
+                </td>
                  <td > 12.00</td>
                  <td><a href="https://www.kinopoisk.ru/film/571896/" target="_blank">Собачья жизнь 2</a></td>
                  <td>Фентази, драмма, комедия</td>
@@ -202,7 +222,11 @@
             </tbody>
             <tbody class="table-fonts" style=" background-color: #373737;">
               <tr>
-                <td style="text-align: center;"> <img src="./images/Stroke.png" alt="галка"></td>
+                <td>
+                    <div style="margin-left:26px;">
+                      <img src="./images/Stroke.png" alt="галка">
+                    </div>
+                </td>
                  <td> 14.00</td>
                  <td><a href="https://www.kinopoisk.ru/film/846824/" target="_blank">История игрушек 4</a></td>
                  <td>Мультфильмы, фентези, комедия</td>
@@ -210,10 +234,14 @@
             </tbody>
             <tbody class="table-fonts" style=" background-color: #4C4D4F;">
               <tr>
-                <td style="border-radius: 0 0 0 10px; text-align: center;"> <img src="./images/Stroke.png" alt="галка"></td>
-                <td> 16.00</td>
-                <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank">Люди в черном: Интернешнл</a></td>
-                <td style="border-radius: 0 0 10px 0; ">Фантастика, боевик, комедия</td>
+                 <td style="border-radius: 0 0 0 10px;">
+                    <div style="margin-left:27px;">
+                       <img src="./images/Stroke.png" alt="галка">
+                    </div>
+                 </td>
+                 <td> 16.00</td>
+                 <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank">Люди в черном: Интернешнл</a></td>
+                 <td style="border-radius: 0 0 10px 0; ">Фантастика, боевик, комедия</td>
               </tr>
             </tbody>
             <tfoot class="table-footer-fonts">

@@ -1,3 +1,18 @@
+.blok01 {
+  background: no-repeat url("/images/up-background.png");
+  background-size: contain;
+  width: 1124px;
+  margin-top: -39px;
+  height: 728px;
+  opacity: 0.9;
+}
+.blok01__menu-logo{
+  float: left; 
+  background-color: transparent 
+}
+
+
+
 
 .head-fonts {
   display: inline-block;
@@ -51,13 +66,7 @@
   text-align: left;
 }
 
-.back-ground-body {
-  background: no-repeat url("/images/up-background.png");
-  background-size: contain;
-  width: 1171px;
-  height: 728px;
-  opacity: 0.9;
-}
+
 .logo{
   width: 180px;
   height: 42px;
