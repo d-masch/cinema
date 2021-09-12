@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="./styles/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/main.css"/>
     <style> 
+   html {
+     font-size: 20px;
+   }
     a {
       text-decoration: none;
       color: rgb(255, 255, 255);
@@ -22,50 +25,52 @@
       <!--логотип-->
       <nav class="wellcome__menu" id="menu">
           <div class="wellcome__menu-logo">
-               <a href="http://university.innopolis.ru" target="_blank"> 
+               <a  href="http://university.innopolis.ru" target="_blank"> 
                    <span class="sr-only">Innopolis university</span>
-                   <svg class="logo" style="margin: 90px 20px 0px 89px">
+                   <svg class="logo">
                       <use xlink:href="#logo"></use>
                    </svg>
                </a>
           </div>
-          <div class="wellcome__menu-links1" style="display: inline-block"> <!-- меню -->
-                <div  style="float: left; margin: 86px 53px 0 0"> 
-                      <a href="tel:+7831000000">+7 (800)355 12-56 </a>
+          <div style="display: inline-block;">
+          <div class="wellcome__menu-links1"> <!-- меню -->
+                <div class="wellcome__menu-links1-element"> 
+                      <a class="menu-color" href="tel:+7831000000">+7 (800)355 12-56 </a>
                 </div>
-                <div style="display: inline-block; margin: 86px 50px 0 0; text-decoration: underline;">
-                     <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+                <div class="wellcome__menu-links1-element">
+                     <a class="menu-color" href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
                 </div>
-                <div style="display: inline-block; margin: 86px 50px 0 0">
-                     <a href="#menu">ул. Спортивная, д.1</a>
+                <div class="wellcome__menu-links1-element">
+                     <a class="menu-color" href="#menu">ул. Спортивная, д.1</a>
                 </div>
-                <div class="icon-button" style="display: inline-block; margin: 0 60px 0 0; border-radius: 10px 10px 10px 10px;">
+                <div class="wellcome__menu-links1-element icon-button">
                       <form action="/order">
-                           <button type="button">
-                                 <div style="margin:  0 10px 0 0;">
-                                        <img src="./images/telephon.png" alt="телефонная трубка">    Заказать звонок 
+                           <button class="button" type="button">
+                                 <div class="button_1">
+                                        <img src="../images/telephon.png" alt="телефонная трубка">    Заказать звонок 
                                  </div>         
                            </button>
                       </form>
                  </div>
           </div>
-          <div class="wellcome__menu-links2" style="display: inline-block">
-               <div style="display: inline-block; margin: 15px 70px 0 0">
-                     <a href="#menu">EVENT DETALIS</a>
+          <div class="wellcome__menu-links2">
+               <div class="wellcome__menu-links2-element">
+                     <a class="menu-color" href="#menu">event detales</a>
                </div>
-               <div style="display: inline-block; margin: 15px 70px 0 0">
-                   <a href="#menu">SPEAKERS</a>
+               <div class="wellcome__menu-links2-element">
+                   <a class="menu-color" href="#menu">speakers</a>
                </div>
-               <div style="display: inline-block; margin: 15px 74px 0 0">
-                   <a href="#menu">SPONSORS</a>
+               <div class="wellcome__menu-links2-element">
+                   <a class="menu-color" href="#menu">sponsors</a>
                </div>
-               <div style="display: inline-block; margin: 15px 40px 0 0">
-                    <a href="#menu">FAST EVENTS</a>
+               <div class="wellcome__menu-links2-element">
+                    <a class="menu-color" href="#menu">fast events</a>
                </div>
-               <div style="display: inline-block; margin: 15px 40px 0 30px">
-                    <a href="#contacts">CONTACT</a>
+               <div class="wellcome__menu-links2-element">
+                    <a class="menu-color" href="#contacts">contact</a>
                </div>
           </div>
+        </div>
       </nav>
       <div class="wellcome__ticket">  
                  <h1>Закажите билет в кино</h1>    
@@ -73,20 +78,30 @@
       <div class="wellcome__giftForAll">
                  <h2>Всем покупателям подарок!</h2>
       </div>
+      <!--фигура "белый угол"-->
+      <div style="float: right;
+        position: absolute;
+        height: 0;
+        width: 0;
+        margin-top: 6.6rem;
+        border-bottom: 7.5rem solid rgb(255, 255, 255);
+        border-top: 2.5px solid transparent;
+        border-left:  56.2rem solid transparent;">
+      </div>
     </div>
 
    <div class="whywe">
           <div class="whywe__wellcome">
-               <div class="whywe__wellcome-whywe" style="float: left; margin-top: 200px; ">
-                   <div style="margin: 4px 15px 0 0;">
+               <div class="whywe__wellcome-whywe">
+                   <div style="margin: .2rem .75rem 0 0;">
                     Почему мы?
                   </div>
                </div>
-               <div class="whywe__wellcome-wellcome" style="display: inline-block; margin-top: 34px; width: 426px;">
-                       <div style="font-family:'IBM-Plex-Sens-SemiBold'; margin: 28px 25px 0 0; text-align: center; font-size: 33px; line-height: 1.3;">
+               <div class="whywe__wellcome-wellcome">
+                       <div style="font-family:'IBM-Plex-Sans-SemiBold'; margin: 1.4rem 1.25rem 0 0; text-align: center; font-size: 1.65rem; line-height: 1.3;">
                                   <h3>Добро пожаловать! </h3>
                        </div>
-                       <div style="font-family: 'IBM-Plex-Sens-Regular'; margin: 24px 26px 0 44px; font-size: 11px; line-height: 1.3;">
+                       <div style="font-family: 'IBM-Plex-Sans-Regular'; margin: 1.2rem 1.3rem 0 2.2rem; font-size: .55rem; line-height: 1.3;">
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                              sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut<br>enim ad minim veniam.</p>
@@ -97,65 +112,80 @@
                         </div>
                </div>
           </div>
-             <div class="whywe__big-screen" style="float: left; margin: 60px 0 0 140px; width: 245px;">
-                   <img src="./images/big_screen.png" alt="Большие экраны">
-                   <div class="body-whyme-heads" style="text-align: center;  margin: 37px 0 29px 0 ;">
-                         <p>Большие экраны</p>
-                   </div>
-                   <div class="body-whyme-text">
-                         <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
-                   </div>
-             </div>
-             <div class="whywe__obemniy-zvuk" style="display: inline-block; margin: 60px 0 0 54px; width: 245px;">
-                   <img src="./images/obemniy_zvuk.png" alt="Объёмный звук">
-                   <div class="body-whyme-heads" style="text-align: center; margin: 37px 0 29px 0 ;">
-                         <p>Объёмный звук</p>
-                   </div>
-                   <div class="body-whyme-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
-                   </div>
-              </div>
-              <div class="whywe__comfort-chairs" style="display: inline-block; margin: 60px 0 0 50px; width: 245px;">
-                   <img src="./images/comfort_chairs.png" alt="Удобные кресла">
-                   <div class="body-whyme-heads" style="text-align: center; margin: 37px 0 29px 0 ;">
-                         <p>Удобные кресла</p>
-                   </div>
-                   <div class="body-whyme-text">
-                         <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
-                   </div>
-             </div>
-             <div class="whywe__atmosfer" style="float: left; margin: 58px 0 0 140px; width: 250px;">
-                    <img src="./images/atmosfer.png" alt="Уютная атмосфера">
-                    <div class="body-whyme-heads" style="text-align: center; margin: 37px 0 29px 0 ;">
+          <div  class="whywe-content">
+                <div class="whywe-flex-content">
+                      <div class="whywe__big-screen">
+                            <img src="./images/big_screen.png" alt="Большие экраны">
+                      </div>
+                      <div class="whywe__obemniy-zvuk">
+                            <img src="./images/obemniy_zvuk.png" alt="Объёмный звук">
+                      </div>
+                      <div class="whywe__comfort-chairs">
+                            <img src="./images/comfort_chairs.png" alt="Удобные кресла">
+                      </div>
+                </div>
+                <div class="whywe-flex-content">
+                      <div class="body-whywe-heads" style="text-align: center;  margin: 1.85rem 0 1.45rem 0 ;">
+                            <p>Большие экраны</p>
+                      </div>
+                      <div class="body-whywe-heads" style="text-align: center; margin: 1.85rem 0 1.45rem 0 ;">
+                            <p>Объёмный звук</p>
+                      </div>
+                      <div class="body-whywe-heads" style="text-align: center; margin: 1.85rem 0 1.45rem 0 ;">
+                            <p>Удобные кресла</p>
+                      </div>
+                </div>
+                <div class="whywe-flex-content">
+                      <div class="body-whywe-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
+                      </div>
+                      <div class="body-whywe-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
+                      </div>
+                      <div class="body-whywe-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
+                      </div>
+                </div> 
+
+                <div class="whywe-flex-content" style="margin-top: 2.9rem;">
+                       <div class="whywe__atmosfer">
+                                 <img src="./images/atmosfer.png" alt="Уютная атмосфера">
+                       </div>
+                       <div class="whywe__full-sub">
+                                 <img src="./images/full_sub.png" alt="Полное погружение">
+                       </div>
+                       <div class="whywe__kisses">
+                                 <img src="./images/kisses.png" alt="Поцелуи на задних рядах">
+                       </div>
+                </div>
+                <div class="whywe-flex-content">
+                    <div class="body-whywe-heads" style="text-align: center; margin: 1.85rem 0 1.45rem 0 ;">
                          <p>Уютная атмосфера</p>
                     </div>
-                    <div class="body-whyme-text">
-                      <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
-                    </div>
-              </div> 
-              <div class="whywe__full-sub" style="display: inline-block; margin: 50px 0 0 50px; width: 245px;">
-                     <img src="./images/full_sub.png" alt="Полное погружение">
-                     <div class="body-whyme-heads" style="text-align: center; margin: 37px 0 29px 0 ;">
+                    <div class="body-whywe-heads" style="text-align: center; margin: 1.85rem 0 1.45rem 0 ;">
                          <p>Полное погружение</p>
-                     </div>
-                     <div class="body-whyme-text">
+                    </div>
+                    <div class="body-whywe-heads" style="text-align: center; margin: 1.85rem 0 1.45rem 0 ;">
+                         <p>Поцелуи на заднем ряду</p>
+                    </div>
+                </div>  
+                <div class="whywe-flex-content">
+                    <div class="body-whywe-text">
+                           <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
+                    </div>
+                    <div class="body-whywe-text">
+                           <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
+                    </div>
+                    <div class="body-whywe-text">
                       <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
                     </div>
-              </div>
-              <div class="whywe__kisses" style="display: inline-block; margin: 58px 0 0 50px; width: 245px;">
-                       <img src="./images/kisses.png" alt="Поцелуи на задних рядах">
-                       <div class="body-whyme-heads" style="text-align: center; margin: 37px 0 29px 0 ;">
-                          <p>Поцелуи на заднем ряду</p>
-                       </div>
-                       <div class="body-whyme-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor incididunt<br>ut labore et dolore magna aliqua. Ut enim ad<br>minim veniam.</p>
-                      </div>
+                 </div>                   
               </div>
         </div>
-  
+    
     <!--таблица с фильмами-->
-    <div class="movietable" style="width: 1124px;">
-          <div class="movietable__heading" style="margin-top: 171px; margin-left: 136px;">
+    <div class="movietable">
+          <div class="movietable__heading" style="margin-top: 8.55rem; margin-left: 6.8rem;">
                    <h2>Выберите фильм</h2>
           </div>      
           <table class="movietable__table a" style=" margin-top: 84px; margin-left: 137px;">
@@ -184,7 +214,7 @@
                           <img src="./images/corner-down.png" alt="стрелка вниз">
                       </div>
                    </th>
-                   <th style="border-radius: 0 10px 0 0; ">Жанр</th>
+                   <th style="border-radius: 0 .5rem 0 0; ">Жанр</th>
               </tr>
             </thead>
             <tbody class="table-fonts" style="background-color: #373737;">
@@ -247,128 +277,250 @@
     </div><!--конец таблицы с фильмами-->
 
       <!--блок получить подарок-->
-      <div class="getgift" style="float:left; margin-top:90px; border: 1px solid rgb(0, 0, 0); height: 660px; width: 1171px; background-image: url(./images/Background-2.jpg);">
-       
-            <div class="getgift-giftimage" style="float: left; width: 490px; height: 587px; border: 1px solid rgb(0, 0, 0); align-items: center;">
+      <div class="getgift">
+        <div style="width: 56.2rem; height: 5rem; height: 0;
+        width: 0; margin-top: 0;      
+        border-top: 5.25rem solid rgb(255, 255, 255);
+        border-right: 56.2rem solid transparent;">
+        </div>
+        <div class="flex_1">
+            <div class="getgift-giftimage" >
                 <img class="giftimage" src="./images/gift.png" alt="подарок">
             </div>
-            <div class="getgift-text" style="float: right; padding-top: 90px; border: 1px solid rgb(0, 0, 0);">
-              <div style="font-size: 40px; color:  rgb(255, 255, 255);">
-                  <p>Подарок каждому !</p>
-              </div>
-              <div class="text-gift" style="padding: 20px 60px; font-size: 12px; color:rgb(255, 255, 255); width: 550px; ">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.<br> Ut pharetra sit amet aliquam id diam maecenas. 
-                  Nunc vel risus commodo viverra maecenas accumsan.</p>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.<br> Ut pharetra sit amet aliquam id diam maecenas. 
-                    Nunc vel risus commodo viverra maecenas accumsan.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
-                  Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. 
-                  Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. 
-                 </p>
-              </div>
+            <div class="getgift-text" >
+                  <div style="font-size: 2.4rem; color:rgb(255, 255, 255);margin-bottom: 50px;">
+                         <p>Подарок каждому !</p>
+                  </div>
+                  <div class="gift-text">
+                                <p style="margin-bottom: 1.5rem;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
+                                <br></p>
+                                <p style="margin-bottom:  1.5rem;"> Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus.<br></p>
+                                <p style="margin-bottom:  1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. 
+                                   Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. 
+                                   Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. 
+                               </p>
+                  </div>
+                  <div class="get-gift" style="float: right; font-size: 1rem;">
+                    <form action="/order">
+                      <button class="button_2" type="button">Получить подарок</button>
+                    </form>
+                  </div>
+                </div>
+          </div>
+            <div style="width: 56.2rem; border: 1px solid black;
+            width: 0;
+            margin-top: 0;
+            border-bottom: 5.25rem solid rgb(255, 255, 255);
+            border-left:  56.2rem solid transparent;">
             </div>
-            <div style="float: left; width: 850px; height: 30px; border: 1px solid rgb(0, 0, 0);">
-            </div>
-            <div class="get-gift" style="display: inline-block; height: 30px;">
-              <form action="/order">
-                <button type="button">Получить подарок</button>
-              </form>
-            </div>
-      </div>
+    </div>
    
     <!--фильмы-->
     <div class="movies">
-       <div>
-      <section style="padding: 50px;">
-        <div class="body-heading-fonts" style="margin: 50px 20px 20px 20px; ">
-          <h2>Фильмы</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.</p>
-       </section>
-       </div>
+             <div class="movies-head">
+                   <div class="body-heading-fonts">
+                             <h2>Фильмы</h2>
+                   </div>
+                   <div class="movies-head_text">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                     incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                     a iaculis at. Vel quam elementum pulvinar etiam non quam.</p>
+                  </div>
+            </div>
+       
    
-        <div class="other-fonts" style="background-color: grey; width: 850px;">
-      
-              <div style="float: left; width: 33%;">
-                  <img src="./images/movie_1.png" alt="movie 1">
-                  <p>выживший</p>
-              </div>
-              <div style="display: inline-block; width: 33%;">
+        <div class="movies-images">
+             <div class="movies-images_movie"> <!--фильм выживший-->
+                      <div class="movies-images_image">
+                       <img src="./images/movie_1.png" alt="movie 1">  
+                      </div>
+                      <div class="movies-images_shadow"></div>
+                      <div class="movies-images_descr">
+                            <div class="movies-images_descrtext1">
+                              Выживший</div>
+                            <div class="movies-images_descrtext2">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                 incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                                 a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                                 aliquam id diam maecenas.
+                            </div> 
+                      </div>
+            </div>
+            <div class="movies-images_movie"> <!--фильм Лёд-->
+                  <div >
                   <img src="./images/movie_2.jpg" alt="movie 2">
-                  <p>выживший</p>
-              </div>
-              <div style="display: inline-block; width:auto;">
+                  </div>
+                  <div class="movies-images_shadow"></div>
+                  <div class="movies-images_descr">
+                        <div class="movies-images_descrtext1">
+                          Лёд</div>
+                        <div class="movies-images_descrtext2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                             incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                             a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                             aliquam id diam maecenas.
+                        </div> 
+                  </div>
+            </div>
+            <div class="movies-images_movie"> <!--фильм Марсианин-->
+                  <div >
                   <img src="./images/movie_3.jpg" alt="movie 3">
-                  <p>выживший</p>
-              </div>
-              <div style="float: left; width: 33%;">
-                   <img src="./images/movie_4.jpg" alt="movie 4">
-                   <p>выживший</p>
-              </div>
-              <div style="display: inline-block; width: 33%;">
-                    <img src="./images/movie_5.jpg" alt="movie 5">
-                    <p>выживший</p>
-              </div>
-              <div style="display: inline-block; width: auto;">
-                    <img src="./images/movie_6.jpg" alt="movie 6">
-                    <p>выживший</p>
-              </div>
-              <div style="float: left; width: 33%;">
-                <img src="./images/movie_7.jpg" alt="movie 7">
-                <p>выживший</p>
-              </div>
-              <div style="display: inline-block; width: 33%;">
-                 <img src="./images/movie_8.jpg" alt="movie 8">
-                 <p>выживший</p>
-              </div>
-              <div style="display: inline-block; width: auto;">
-                     <img src="./images/movie_9.jpg" alt="movie 9">
-                     <p>выживший</p>
-              </div>
-        </div>
-   </div>
-   <!--товары-->
-  <div class="goods">
-    
-    <section style="padding: 50px;">
-      <div class="body-heading-fonts" style="margin: 50px 20px 20px 20px; color:  rgb(163, 204, 64);">
-        <h2>Товары</h2>
+                  </div>
+                  <div class="movies-images_shadow"></div>
+                  <div class="movies-images_descr">
+                        <div class="movies-images_descrtext1">
+                          Марсианин</div>
+                        <div class="movies-images_descrtext2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                             incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                             a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                             aliquam id diam maecenas.
+                        </div> 
+                  </div>
+            </div>
+            <div class="movies-images_movie"> <!--фильм жкньщина со шлемом-->
+                    <div>
+                         <img src="./images/movie_4.jpg" alt="movie 4">
+                   </div>
+                   <div class="movies-images_shadow"></div>
+                   <div class="movies-images_descr">
+                        <div class="movies-images_descrtext1">
+                          Фильм</div>
+                        <div class="movies-images_descrtext2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                             incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                             a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                             aliquam id diam maecenas.
+                        </div> 
+                   </div>
+              </div>  
+              <div class="movies-images_movie"> <!--фильм-->  
+                     <div >
+                            <img src="./images/movie_5.jpg" alt="movie 5">
+                     </div>
+                     <div class="movies-images_shadow"></div>
+                     <div class="movies-images_descr">
+                          <div class="movies-images_descrtext1">Фильм</div>
+                          <div class="movies-images_descrtext2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                               incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                               a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                               aliquam id diam maecenas.
+                          </div> 
+                     </div>
+              </div> 
+              <div class="movies-images_movie"> <!--Территория-->  
+                       <div>
+                             <img src="./images/movie_6.jpg" alt="movie 6">
+                       </div>
+                       <div class="movies-images_shadow"></div>
+                       <div class="movies-images_descr">
+                            <div class="movies-images_descrtext1">Фильм</div>
+                            <div class="movies-images_descrtext2">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                 incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                                 a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                                 aliquam id diam maecenas.
+                            </div> 
+                       </div>
+                </div> 
+                <div class="movies-images_movie"> <!--Фильм-->  
+                       <div>
+                             <img src="./images/movie_7.jpg" alt="movie 7">
+                       </div>
+                       <div class="movies-images_shadow"></div>
+                       <div class="movies-images_descr">
+                            <div class="movies-images_descrtext1">Фильм</div>
+                            <div class="movies-images_descrtext2">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                 incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                                 a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                                 aliquam id diam maecenas.
+                            </div> 
+                       </div>
+                </div>
+          <div class="movies-images_movie"> <!--Фильм-->  
+                <div >
+                        <img src="./images/movie_8.jpg" alt="movie 8">
+                </div>
+                <div class="movies-images_shadow"></div>
+                <div class="movies-images_descr">
+                     <div class="movies-images_descrtext1">Фильм</div>
+                       <div class="movies-images_descrtext2">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                          incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                          a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                          aliquam id diam maecenas.
+                        </div> 
+                     </div>
+                </div>
+          <div class="movies-images_movie"> <!--Фильм Живое-->  
+                 <div >
+                        <img src="./images/movie_9.jpg" alt="movie 9">
+                 </div>
+                 <div class="movies-images_shadow"></div>
+                 <div class="movies-images_descr">
+                      <div class="movies-images_descrtext1">Фильм</div>
+                        <div class="movies-images_descrtext2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                           incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie 
+                           a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet 
+                           aliquam id diam maecenas.
+                         </div> 
+                      </div>
+                 </div>
+           </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.</p>
-     </section>
-     <div > <!-- фото товаров -->
-            <div style="display: inline-block;">
+           <!--товары-->
+    <div class="goods">
+        <div class="goods__goods-descr">
+                    <div class="goods__goods-head  body-heading-fonts">
+                          <h2>Товары</h2>
+                    </div>
+                    <div class="goods__goods-descrtext">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
+                    etiam non quam.
+                    </div>
+        </div>
+     <div class="goods__goods-images"> <!-- фото товаров -->
+            <div>
               <img src="./images/Coca_Cola.jpg" alt="Напиток Coca-Cola">
             </div>
-            <div style="display: inline-block;">
+            <div>
               <img src="./images/Keychain_iron_man.jpg" alt="Брелоки Iron Man">
             </div>
-            <div style="display: inline-block;">
+            <div>
               <img src="./images/The_Avengers_poster.jpg" alt="Постер Мстители">
             </div>
      </div>
   </div>
   <div class="review">    
-       <section style="padding: 50px;">
-          <div class="body-heading-fonts" style="margin: 50px 20px 20px 20px; color:  rgb(163, 204, 64);">
+       <section class="review__review-descr">
+          <div class="body-heading-fonts review__review-head">
              <h2>Отзывы</h2>
           </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.</p>
+          <div class="review__review-descrtext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
+            etiam non quam.
+            </div>
      </section>
-     <div > <!-- фото благадарных клиентов-->
-            <div style="display: inline-block;">
+     <div class="review__review-images"> <!-- фото благадарных клиентов-->
+            <div>
               <img src="./images/foto-woman.jpg" alt="фото человека">
             </div>
-            <div style="display: inline-block;">
+            <div>
               <img src="./images/foto-woman.jpg" alt="фото человека">
             </div>
-            <div style="display: inline-block;">
+            <div>
               <img src="./images/foto-woman.jpg" alt="фото человека">
             </div>
      </div>
   </div>
+
   <!--обратная связь-->
-  <div class="feedback" style="padding: 50px; width: 600px; align-items: center; border:1px solid #000;">
+  <div class="feedback">
     <form class="body-fonts" action="/order">
      <div class="body-heading-fonts">
       <h2>Обратная связь</h2>

@@ -5,38 +5,62 @@
 .wellcome {
   background: no-repeat url("/images/up-background.png");
   background-size: contain;
-  width: 1124px;
-  margin-top: -39px;
-  height: 728px;
-}
+  width: 56.2rem;
+  margin-top: 0;
+  height: 34rem;
+  }
 .wellcome__menu-logo {
   float: left; 
-  background-color: transparent 
+  background-color: transparent;
+  margin-top: 2.5rem;
+  margin-left: 4.2rem;
+  margin-right: 1rem;
 }
 .wellcome__menu-links1 {
+  display: flex;
   color: rgb(255, 255, 255);
-  font-family: 'IBM-Plex-Sens-Medium';
-  font-size: 12px;
+  font-family: 'IBM-Plex-Sans-Medium';
+  font-size: .6rem;
   line-height: 1.3;
   text-align: center;
+  margin-top: 2.4rem;
 }
+.wellcome__menu-links1-element{
+  margin-right: 2.9rem;
+}
+.button {
+  border-radius: .3rem;
+}
+.button_1 {
+  margin:  0 .5rem 0 0;
+ }
 .wellcome__menu-links2 {
+  display: flex;
   color: rgb(255, 255, 255);
-  font-family: 'IBM-Plex-Sens-Medium';
-  font-size: 12px;
+  font-family: 'IBM-Plex-Sans-Medium';
+  font-size: .6rem;
+  line-height: 1.3;
+  text-transform: uppercase;
   text-align: center;
+  margin-top: 0.5rem;
+}
+.wellcome__menu-links2-element{
+  margin-right: 3.8rem;
+}
+.menu-color:hover{
+ color:  rgb(163, 204, 64);
 }
 .wellcome__ticket {
   color: rgb(255, 255, 255);
-  font-family: 'IBM-Plex-Sens-Thin';
-  font-size: 68px;
-  margin-top: 144px;
+  font-family: 'IBM-Plex-Sans-Thin';
+  font-size: 3.4rem;
+  margin-top: 7.2rem;
   text-align: center;
 }
 .wellcome__giftForAll {
-  font-family: 'IBM-Plex-Sens-Regular';
-  font-size: 41px;
-  margin-top: 33px;
+  font-family: 'IBM-Plex-Sans-Regular';
+  font-size: 2rem;
+  margin-top: 1.65rem;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -44,119 +68,318 @@
 
 /* блок whywe */
 .whywe {
+ opacity: .99;
   border: solid 1pt; 
   color: #000; 
-  width: 1124px; 
-  margin-top: -200px;
+  width: 56.2rem; 
+  margin-top: -9.5rem;
+  box-shadow: gray;
 }
 .whywe__wellcome {
 margin-bottom: 68px;
 }
 .whywe__wellcome-whywe {
-  font-family: 'IBM-Plex-Sens-Medium';
-  font-size: 48px;
-  line-height: 62.4px;
+  float: left; 
+  margin-top: 10rem; 
+  font-family: 'IBM-Plex-Sans-Medium';
+  font-size: 2.4rem;
+  line-height: 1.33;
   color:  rgb(163, 204, 64); 
   text-align: center; 
-  width: 564px; 
+  width: 28.2rem; 
 }
 .whywe__wellcome-wellcome{ 
-  font-family: 'IBM-Plex-Sens-Medium';
+  display: inline-block; 
+  margin-top: 1rem; 
+  width: 21.3rem;
+  height: 11rem;
+  font-family: 'IBM-Plex-Sans-Medium';
   background-color: white;
-  border-radius: 7px;
   border: solid 1pt rgb(255, 255, 255); 
-  color: #000;
+  box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
+  border-radius: .5rem;
 }
-.body-whyme-heads { 
-  font-family: 'IBM-Plex-Sens-SemiBold';
-  font-size: 20px;
+.whywe-content {
+  margin-top: 6rem; 
+  margin-left: 5rem; 
+  width: 45rem;  
 }
-.body-whyme-text { 
-  font-family: 'IBM-Plex-Sens-Regular';
-  font-size: 11px;
+.whywe-flex-content{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  justify-content: space-around
+}
+.body-whywe-heads { 
+  font-family: 'IBM-Plex-Sans-SemiBold';
+  font-size: 1rem;
+}
+.body-whywe-text { 
+  font-family: 'IBM-Plex-Sans-Regular';
+  font-size: .55rem;
   line-height: 1.3;
   text-align: center;
 }
 /* конец блок whywe */
 
 .body-fonts { 
-  font-family: 'IBM-Plex-Sens-Medium';
+  font-family: 'IBM-Plex-Sans-Medium';
     font-size: 16px;
 }
 .body-heading-fonts { 
-  font-family: 'IBM-Plex-Sens-Medium';
+  font-family: 'IBM-Plex-Sans-Medium';
   font-size: 48px;
   line-height: 62.4px;
   color:  rgb(163, 204, 64);
 }
 .other-fonts { 
   color: rgb(255, 255, 255);
-  font-family: 'IBM-Plex-Sens-Medium';
+  font-family: 'IBM-Plex-Sans-Medium';
   font-size: 16px;
 }
 .icon-button {
  background-image: url("./images/telephon.png"); 
 }
-.footer-fonts {
-  color: rgb(255, 255, 255);
-  font-family: 'IBM-Plex-Sens-Medium';
-  font-size: 12px;
-  text-align: left;
-}
+
 .logo{
   width: 180px;
   height: 42px;
  }
  /*стили таблицы*/
+ .movietable{
+  width: 56.2rem;
+ }
  .movietable__heading {
-  font-family: 'IBM-Plex-Sens-Medium';
-  font-size: 48px;
-  line-height: 62.4px;
+  font-family: 'IBM-Plex-Sans-Medium';
+  font-size: 2.4rem;
+  line-height: 1.3;
   color:  rgb(163, 204, 64);
   }
   .movietable__table {
-  width: 849px;
+  width: 42.45rem;
   }
   .table-heading-fonts {
     color: rgb(255, 255, 255);
-    font-family: 'IBM-Plex-Sens-SemiBold';
-    font-size: 20px;
+    font-family: 'IBM-Plex-Sans-SemiBold';
+    font-size: 1rem;
     line-height: 2.3;
     text-align: left; 
   }
   .table-fonts {
     color: rgb(255, 255, 255);
     font-family:'IBM-Plex-Sens-Regular';
-    font-size: 14px;
+    font-size: .7rem;
     line-height: 3.27;
     text-align: left; 
   }
   .table-footer-fonts {
     color: rgb(0, 0, 0);
     font-family: 'IBM-Plex-Sens-Regular';
-    font-size: 11px;
+    font-size: .55rem;
     text-align: center;
-    line-height: 14.3px;
+    line-height: .72rem;
     } 
 /*конец стили таблицы*/
+ 
+/* getgift получить подарок */
+.getgift{
+display: block;
+ float:left; 
+  margin-top: 5.6rem; 
+  border: 1px solid rgb(0, 0, 0); 
+  width: 56.2rem; 
+  background-image: url("../images/Background-2.jpg");
+}
+.flex_1{
+  display: flex;
+}
+ .getgift-giftimage{
+  float: left; 
+  border: 1px solid rgb(0, 0, 0); 
+  }
+  .giftimage {
+    width: 13.75rem;
+    height: 13.75rem;
+    border-radius: 50%;
+    margin-left: 6.8rem;
+    margin-top: -7.5rem;
+  }
+  .getgift-text {
+  font-family: 'IBM-Plex-Sans-Medium';
+   display: inline-block;
+   text-align: right;
+   color: rgb(255, 255, 255);
+   width: 27.5rem; 
+  padding: 0 0 2.5rem 1rem; 
+  border: 1px solid rgb(0, 0, 0);
+  font-size: .55rem;
+   
+  }
+.gift-text .p{
+  font-family:"IBM-Plex-Sans-Regular";
+  padding: 2rem 0 1rem 1rem; 
+  font-size: .55rem; 
+  color:rgb(255, 255, 255); 
+  width: 27.5rem;
 
-.textarea {
-  resize: none;
+}
+ .button_2 {
+   background-color: rgb(163, 204, 64); 
+   color: rgb(255, 255, 255);
+   border-radius: .5rem;
+ }
+ /* конец блока получить подарок*/
+
+ /*movies блок  Фильмы*/
+.movies{
+  display: block;
+  float: left;
+  width: 56.2rem; 
+}
+.movies-head {
+margin: 3rem 0 1rem 7rem
+}
+.movies-head_text{
+  font-family: 'IBM-Plex-Sans-Regular';
+  font-weight: 400;
+  width: 27.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: .55rem;
+}
+.movies-images {
+  font-family: 'IBM-Plex-Sans-SemiBold';
+  overflow: hidden;
+  display: flex;
+  margin-left: 7rem;
+  width: 56.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: grey; 
+  width: 42.7rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.movies-images_movie {
+  position: relative;
+}
+.movies-images_movie:hover .movies-images_shadow {
+opacity: 0;
+}
+.movies-images_movie:hover .movies-images_descr {
+  opacity: 1;
+}
+ .movies-images_image{
+ width: 100%;
+}
+.movies-images_shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(22, 22, 22, .4);
+  transition: .5s;
+}
+.movies-images_descr {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(144, 210, 61, .4);
+  opacity: 0;
+  transition: .5s;
+}
+.movies-images_descrtext1{
+padding: 1rem;
+font-weight: 600;
+font-size: 1.45rem;
+line-height: 1.3;
+}
+.movies-images_descrtext2{
+  padding: 0 1rem 1rem 1rem;
+  font-size: .55rem;
+  line-height: 1.3;
+}
+/* конец блока  Фильмы */
+
+/* блок  goods  (товары) */
+.goods {
+  display: block;
+  float: left;
+  width: 56.2rem; 
+}
+.goods__goods-head{
+  margin: 2rem 0 1rem 7rem;
+}
+.goods__goods-descrtext{
+  font-family: 'IBM-Plex-Sans-Regular';
+  font-weight: 400;
+  width: 27.4rem;
+  margin: 1.5rem 0 3rem 7rem; 
+  font-size: .55rem;
+}
+.goods__goods-images{
+  display: flex;
+  overflow: hidden;
+  margin-left: 7rem;
+  width: 56.2rem;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+  width: 42.7rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
-.giftimage {
-  width: 275px;
-  height: 275px;
-  border-radius: 50%;
-  margin-left: 136px;
-  margin-top: -40px;
+
+
+/* блок отзывы */
+.review{
+  display: block;
+  float: left;
+  margin-top: 5rem;
+  
+  width: 56.2rem;
+  height: 39.5rem; 
+  background-image: url("../images/rewue-bg.png");
+  background-size: 56.2rem;
 }
-.text-gift {
-  text-align: right; /*выравнивание текста по правому краю*/
- }
- .get-gift {
-  background-color: rgb(163, 204, 64);
- }
+
+.review__review-head{
+  margin: 5rem 0 5rem 7rem;
+}
+.review__review-descrtext{
+  font-family: 'IBM-Plex-Sans-Regular';
+  color: white;
+  font-weight: 400;
+  width: 27.4rem;
+  margin: 1.5rem 0 3rem 7rem; 
+  font-size: .55rem; 
+}
+.review__review-images{
+  display: flex;
+  overflow: hidden;
+  width: 56.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+/* блок "обратная связь" */
+.feedback {
+  display: block;
+  float: left;
+  width: 56.2rem;
+  padding: 50px; 
+  width: 600px; 
+  align-items: center; 
+  border:1px solid #000;
+}
  .sr-only {
   position: absolute;
   width: 1px;
@@ -168,3 +391,17 @@ margin-bottom: 68px;
   white-space: nowrap; /* added line */
   border: 0;
 } 
+.textarea {
+  resize: none;
+}
+.map{
+  display: block;
+  float: left;
+  width: 56.2rem;
+}
+.footer-fonts {
+  color: rgb(255, 255, 255);
+  font-family: 'IBM-Plex-Sans-Medium';
+  font-size: .6rem;
+  text-align: left;
+}
