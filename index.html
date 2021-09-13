@@ -495,7 +495,12 @@
             </div>
      </div>
   </div>
-  <div class="review">    
+  <div class="review"> 
+        <div style="width: 56.2rem; height: 5rem; height: 0;
+        width: 0; margin-top: 0;      
+        border-top: 5.25rem solid rgb(255, 255, 255);
+        border-right: 56.2rem solid transparent;">
+        </div>   
        <section class="review__review-descr">
           <div class="body-heading-fonts review__review-head">
              <h2>Отзывы</h2>
@@ -517,12 +522,22 @@
               <img src="./images/foto-woman.jpg" alt="фото человека">
             </div>
      </div>
+     <div style="width: 56.2rem;
+            width: 0;
+            margin-top: 4.3rem;
+            border-bottom: 5.25rem solid rgb(255, 255, 255);
+            border-left:  56.2rem solid transparent;">
+            </div>
   </div>
 
   <!--обратная связь-->
   <div class="feedback">
+    <div class="feedback__box-shadow">
+    <div class="feedback__gradient-image">
+    </div>
+    <div class="feedback__input-form">
     <form class="body-fonts" action="/order">
-     <div class="body-heading-fonts">
+     <div class="feedback__head-fonts">
       <h2>Обратная связь</h2>
      </div>
      <div>  
@@ -550,54 +565,70 @@
       <input type="checkbox" id="checkbox" name="#" >
       <label for="checkbox">Я согласен на обработку своих персональных данных</label>
      </div>
-     <div>
-      <input type="file" id="file"> <!--для учебных целей-->
-      <label for="file">выберите файл</label>
-     </div>
+     
      <div>
       <input type="email" placeholder="введите электронную почту" required name="#"> <!--для учебных целей-->
      </div>
     <button type="submit">заказать</button>
    </form>
   </div>
-
+  </div>
+</div>
      <!-- карта -->
      <div class="map">
-         <div class="body-heading-fonts" style="padding: 30px; background-color: darkgreen;">
-              <h2> КАРТА  </h2>
-         </div>
+         <img src="./images/image-map.png" alt="карта">
      </div>
   </main>
     <footer class="footer">
-       <div class="footer-fonts" style="float: left; width: 1171px; background-color: rgb(163, 204, 64); border: 1px solid #000;">
+
+       <div class="footer__content">
         <!--лого в футере-->
-        <div style="float: left; width: 300px; padding: 0px 200px 0px 20px; background-color: transparent; align-items: baseline;">
+        <div class="footer__content-col1">
           <a href="http://university.innopolis.ru" target="_blank"> 
             <span class="sr-only">Innopolis university</span>
-          <svg class="logo" style="margin: 70px 50px 30px 50px">
+          <svg class="logo">
             <use xlink:href="#logo"></use>
           </svg>
            </a>
-           <section style="padding: 50px;">
-            <h2>Text</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. </p>
-           </section>
+           <div class="footer__text">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+           </div>
+           <div class="footer__links">
+                  <div class="instagramm-link">
+                           <a href="https://www.instagram.com/" alt="instagramm-link"></a>
+                  </div>
+                  <div class="linkedin-link">
+                            <a href="#" alt="linkedin-link"></a>
+                  </div>    
+                  <div class="twiter-link">
+                            <a href="#" alt="twiter-link"></a>
+                  </div> 
+                  <div class="frame-link">
+                             <a href="#" alt="frame-link"></a>
+                  </div>
+                  <div class="facebook-link">
+                              <a href="#" alt="facebook-link"></a>
+                  </div>
+           </div>
+           <div class="footer__text-copyright">
+             <p>Copyright @ 2020 Innopolis University . All Rights Reserved.</p>
+           </div>
         </div>
-        <div style="padding: 80px 30px; display: inline-block; width: 250px;" >
-          <h2>SITE</h2>
-          <a href="#"> EVENT DETAILS</a>
-          <a href="#"> SPEAKERS</a>
-          <a href="#"> SPONSORS</a>
-          <a href="#"> PAST EVENTS</a>
-          <a href="#"> CONTACT</a>
+        <div class="footer__content-col2">
+          <div class="footer__content-col-head"><h2>site</h2></div>
+          <div class="footer__content-col2-text"><a href="#">event details</a></div>
+          <div class="footer__content-col2-text"><a href="#">speakers</a></div>
+          <div class="footer__content-col2-text"><a href="#">sponsors</a></div>
+          <div class="footer__content-col2-text"><a href="#">past events</a></div>
+          <div class="footer__content-col2-text"><a href="#">contacts</a></div>
         </div>
-        <div id="contacts" style=" padding: 80px 30px; float: right;  width: 255px;" >
-          <h2>CONTACT</h2>
-          <a href="tel:+7831000000"> tel: +7831000000 </a>
-          <a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a>
-          <a href="#"> 420500, г. Иннополис <br> ул.Университетская, д.1</a>
-          <a href="#"> Как добраться</a>
-          <a href="#"> Все контакты</a>
+        <div class="footer__content-col3" id="contact">
+          <div class="footer__content-col-head"><h2>contact</h2></div>
+          <div class="footer__content-col3-text"><a href="tel:+7831000000"> tel: +7831000000 </a></div>
+          <div class="footer__content-col3-text"><a href="mailto:kino@innopolis.ru"> email:kino@innopolis.ru </a></div>
+          <div class="footer__content-col3-text"><a href="#"> 420500, г. Иннополис <br> ул.Университетская, д.1</a></div>
+          <div class="footer__content-col3-text"><a href="#"> Как добраться</a></div>
+          <div class="footer__content-col3-text"><a href="#"> Все контакты</a></div>
         </div>
        </div>
      </footer>
