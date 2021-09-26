@@ -119,6 +119,7 @@
   font-family: "IBM Plex Sans";
   color: rgb(255, 255, 255);
   font-style: normal;
+  width: 100%;
   font-weight: 100;
   font-size: 3.4rem;
   margin-top: 7.15rem;
@@ -530,8 +531,8 @@
 .review__review-item {
   position: relative;
   display: flex;
+  width: 47rem;
   justify-content: center;
-  border: 1px solid #000;
   cursor: pointer;
   margin-left: 7rem;
 }
@@ -539,9 +540,6 @@
   width: 10.6rem;
   background-color: rgba(163, 204, 64, 0.8);
   border-radius: .5rem;
-}
-.review__review-item1-content img{
-  width: 100%;
 }
 .review__review-item1-name{
   font-family: "IBM Plex Sans";

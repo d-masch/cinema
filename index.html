@@ -13,6 +13,7 @@
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./js/owl.carousel.min.js"></script>
     <script defer src="./js/script.js"></script>
+    <script defer src="./js/film-table.js"></script>
     
     <style> 
         html {font-size: 20px;}
@@ -227,54 +228,10 @@
                    <th style="border-radius: 0 .5rem 0 0; ">Жанр</th>
               </tr>
             </thead>
-            <tbody class="table-fonts" style="background-color: #373737;">
-             <tr>
-               <td > 
-                    <div style="margin-left:25px;">
-                         <img src="./images/Stroke.png" alt="галка">
-                    </div>
-              </td>
-               <td> 10.00</td>
-               <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек паук</a></td>
-               <td>Фантастика, боевик, приключения</td>
-             </tr>
+            <tbody id="table-body" class="table-fonts" style="background-color: #373737;">
+
             </tbody>
-            <tbody class="table-fonts" style=" background-color: #4C4D4F;">
-              <tr>
-                <td> 
-                    <div style="margin-left:25px;">
-                      <img src="./images/Stroke-green.png" alt="зелёная галка">
-                    </div>
-                </td>
-                 <td > 12.00</td>
-                 <td><a href="https://www.kinopoisk.ru/film/571896/" target="_blank">Собачья жизнь 2</a></td>
-                 <td>Фентази, драмма, комедия</td>
-              </tr>
-            </tbody>
-            <tbody class="table-fonts" style=" background-color: #373737;">
-              <tr>
-                <td>
-                    <div style="margin-left:26px;">
-                      <img src="./images/Stroke.png" alt="галка">
-                    </div>
-                </td>
-                 <td> 14.00</td>
-                 <td><a href="https://www.kinopoisk.ru/film/846824/" target="_blank">История игрушек 4</a></td>
-                 <td>Мультфильмы, фентези, комедия</td>
-              </tr>
-            </tbody>
-            <tbody class="table-fonts" style=" background-color: #4C4D4F;">
-              <tr>
-                 <td style="border-radius: 0 0 0 10px;">
-                    <div style="margin-left:27px;">
-                       <img src="./images/Stroke.png" alt="галка">
-                    </div>
-                 </td>
-                 <td> 16.00</td>
-                 <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank">Люди в черном: Интернешнл</a></td>
-                 <td style="border-radius: 0 0 10px 0; ">Фантастика, боевик, комедия</td>
-              </tr>
-            </tbody>
+
             <tfoot class="table-footer-fonts">
               <tr>
                  <td  style="border-left: 1px solid white; border-bottom: 1px solid white; border-right: 1px solid white;" colspan="4"> 
@@ -537,8 +494,8 @@
             etiam non quam.
             </div>
      </section>
-     <div class="review__review-item owl-carousel" > <!--       фото благадарных клиентов-->
-      
+     <div class="review__review-item " > <!--       фото благадарных клиентов-->
+      <div class="owl-carousel">
               <div class="review__review-item1-content">
                   <img src="./images/foto-woman.jpg" alt="фото человека">
                   <div class="review__review-item1-text">
@@ -550,7 +507,7 @@
                   </div>
             </div>
             <div class="review__review-item1-content">
-              <img src="./images/Alien.jpg" alt="фото человека">
+              <img src="./images/Alien.jpg" alt="фото Чужого">
               <div class="review__review-item1-text">
                       <p class="review__review-item1-name">Чужой</p>
                       <p class="review__review-item1-review"> 
@@ -560,7 +517,7 @@
               </div>
         </div>
         <div class="review__review-item1-content">
-          <img src="./images/dicaprio.jpg" alt="фото человека">
+          <img src="./images/dicaprio.jpg" alt="фото ДиКаприо">
           <div class="review__review-item1-text">
                   <p class="review__review-item1-name">Леонардо ДиКаприо</p>
                   <p class="review__review-item1-review"> 
@@ -568,13 +525,13 @@
                   </p>
                   <p class="review__review-item1-data">19.09.2021</p>
           </div>
-    </div>
         </div>
-
+      </div>
+    </div>
 
      <div style="width: 56.2rem;
             width: 0;
-            margin-top: 3.4rem;
+            margin-top: 3.5rem;
             border-bottom: 5.25rem solid rgb(255, 255, 255);
             border-left:  56.2rem solid transparent;">
             </div>

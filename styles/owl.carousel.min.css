@@ -85,11 +85,11 @@
 /* добавлены стили кнопок навигации  */
 .owl-carousel .owl-nav button.owl-next{
   top: 5rem;
-  right: 23rem;
+  right: 18rem;
 }
 .owl-carousel .owl-nav button.owl-prev{
   top: 5rem;
-  left: 15rem;
+  left: 13rem;
 }
 /* */
 
