@@ -232,6 +232,13 @@
 /*стили таблицы*/
 .movietable {
   width: 56.2rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.movietable__table {
+  width: 42.45rem;
+  margin-top: 4.2rem;
+  margin-left: 6.85rem;
 }
 .movietable__heading {
   font-family: "IBM Plex Sans";
@@ -239,9 +246,17 @@
   font-size: 2.4rem;
   line-height: 1.3;
   color: rgb(163, 204, 64);
+  margin-top: 8.55rem;
+  margin-left: 6.8rem;
 }
-.movietable__table {
-  width: 42.45rem;
+.movietable__table-head {
+  background-color: rgb(163, 204, 64);
+}
+.movietable__table-head-trow th:first-of-type {
+  border-radius: 0.5rem 0 0 0;
+}
+.movietable__table-head-trow th:last-of-type {
+  border-radius: 0 0.5rem 0 0;
 }
 .table-heading-fonts {
   color: rgb(255, 255, 255);
@@ -267,12 +282,34 @@
   text-align: center;
   line-height: 0.72rem;
 }
+.table-body tr {
+  background: #4c4d4f;
+}
+.table-body tr:nth-child(2n) {
+  background: #373737;
+}
+.table-body-td {
+  margin-left: 1.2rem;
+}
+.table-body tr:last-child td:first-of-type {
+  border-radius: 0 0 0 0.5rem;
+}
+.table-body tr:last-child td:last-of-type {
+  border-radius: 0 0 0.5rem 0;
+}
+.table-footer-fonts td {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.table-footer-fonts td p {
+  padding-top: 30px;
+}
 /*конец стили таблицы*/
 
 /* getgift получить подарок */
 .getgift {
   margin-top: 5.6rem;
-  border: 1px solid rgb(0, 0, 0);
   width: 56.2rem;
   background-image: url("../images/Background-2.jpg");
 }
@@ -281,7 +318,6 @@
 }
 .getgift-giftimage {
   float: left;
-  border: 1px solid rgb(0, 0, 0);
 }
 .giftimage {
   width: 13.75rem;
@@ -536,36 +572,36 @@
   cursor: pointer;
   margin-left: 7rem;
 }
-.review__review-item1-content{
+.review__review-item1-content {
   width: 10.6rem;
   background-color: rgba(163, 204, 64, 0.8);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-.review__review-item1-name{
+.review__review-item1-name {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-align: left;
-  padding: .7rem;
+  padding: 0.7rem;
   color: rgb(255, 255, 255);
 }
 .review__review-item1-review {
   font-family: "IBM Plex Sans Lt";
   font-style: normal;
   font-weight: 400;
-  font-size: .55rem;
+  font-size: 0.55rem;
   text-align: left;
-  padding: .7rem;
+  padding: 0.7rem;
   color: rgb(255, 255, 255);
 }
 .review__review-item1-data {
   font-family: "IBM Plex Sans Lt";
   font-style: normal;
   font-weight: 300;
-  font-size: .7rem;
-  text-align:right;
-  padding: .7rem;
+  font-size: 0.7rem;
+  text-align: right;
+  padding: 0.7rem;
   color: rgb(255, 255, 255);
 }
 /* блок "обратная связь" */
@@ -753,14 +789,14 @@
   border-radius: 100%;
   margin-left: 1.8rem;
 }
-.twiter-link svg{
+.twiter-link svg {
   fill: white;
   margin: 0.4rem 0 0 0.35rem;
 }
-.twiter-link:hover{
+.twiter-link:hover {
   background-color: rgb(255, 255, 255);
 }
-.twiter-link:hover svg{
+.twiter-link:hover svg {
   fill: rgb(190, 233, 86);
 }
 .frame-link {
@@ -772,12 +808,12 @@
 }
 .frame-link svg {
   fill: white;
-  margin: .5rem 0 0 .3rem;
+  margin: 0.5rem 0 0 0.3rem;
 }
-.frame-link:hover{
+.frame-link:hover {
   background-color: rgb(255, 255, 255);
 }
-.frame-link:hover svg{
+.frame-link:hover svg {
   fill: rgb(190, 233, 86);
 }
 .facebook-link {
@@ -787,14 +823,14 @@
   border-radius: 1rem 1rem 1rem 1rem;
   margin-left: 1.8rem;
 }
-.facebook-link svg{
+.facebook-link svg {
   fill: white;
-  margin: .4rem 0 0 .6rem;
+  margin: 0.4rem 0 0 0.6rem;
 }
-.facebook-link:hover{
+.facebook-link:hover {
   background-color: rgb(255, 255, 255);
 }
-.facebook-link:hover svg{
+.facebook-link:hover svg {
   fill: rgb(190, 233, 86);
 }
 /* конец блока футер */
