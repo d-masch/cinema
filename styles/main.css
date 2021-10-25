@@ -234,7 +234,9 @@
   width: 56.2rem;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
-
+.table-checkbox {
+  margin-left: 0.5rem;
+}
 .movietable__table {
   width: 42.45rem;
   margin-top: 4.2rem;
@@ -844,4 +846,29 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.54);
+}
+.hidden{
+  display: none;
+}
+.close{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.form-wrapper {
+  position: relative;
+  background-color: #fff;
+  max-width: 25rem;
+  min-height: 7.5rem;
+  margin: 6rem auto;
+  border-radius: 2rem;
+  border-radius: 2.5rem;
 }
