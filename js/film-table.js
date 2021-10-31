@@ -58,33 +58,36 @@ const filmHelper = {
   getTime() {
     return this.time;
   },
-  getGeneres(){
+  getGeneres() {
     return this.genres.join(", ");
-  }
+  },
 };
 function renderFilmTableItem(film) {
   return `
   <tr>
         <td> 
-            <input 
-            type = "checkbox"
-            class="table-checkbox"
-            id = "${filmHelper.getId.apply(film)}"
-            />
-            <label for = "${filmHelper.getId.apply(film)}">
-                 <svg width=".55rem" 
-                   height=".45rem" 
-                   viewBox="0 0 11 9" 
-                   fill="none" 
-                   xmlns="http://www.w3.org/2000/svg">
-                   <path fill-rule="evenodd"
-                    clip-rule="evenodd" 
-                    d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" fill="white"/>
-                 </svg>
-            </label>
+          <label class="checkbox" for = "${filmHelper.getId.apply(film)}">
+               <input type = "checkbox"
+                 class="table-checkbox"
+                 id = "${filmHelper.getId.apply(film)}"
+                 />
+                 <span class="checkbox-svg">
+                    <svg width=".55rem" 
+                     height=".45rem" 
+                     viewBox="0 0 11 9" 
+                     xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                         clip-rule="evenodd" 
+                         d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 
+                         0.298203L4.60581 6.79378Z"/>
+                     </svg>
+                  </span>
+           </label>
         </td>
         <td>${filmHelper.getTime.apply(film)}</td>
-        <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank">${filmHelper.getTitle.apply(film)}</a></td>
+        <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank">${filmHelper.getTitle.apply(
+          film
+        )}</a></td>
         <td>${filmHelper.getGeneres.apply(film)}</td>
   </tr> `;
 }
