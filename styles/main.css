@@ -3,21 +3,42 @@
 }
 /* блок wellcome*/
 .wellcome {
+  position: relative;
+  min-height: 125vh;
+  background-position: center;
   background: no-repeat url("/images/up-background.png");
-  background-size: contain;
-  width: 56.2rem;
-  margin-top: 0;
-  height: 34rem;
+  background-size: cover;
+}
+.wellcome::after{
+  position: absolute;
+  content: " ";
+  display: block;
+ left: 0;
+ right: 0;
+  margin-top: 8rem;
+  border-bottom: 6.2rem solid rgb(255, 255, 255);
+  bottom: 0;
+  border-left: 100vw solid transparent;
+}
+.wellcome__menu{
+width: 100%;
+text-align: center;
+display: flex;
+justify-content: space-around;
 }
 .wellcome__menu-logo {
-  float: left;
+ display: flex;
+  justify-content: space-around;
   background-color: transparent;
   margin-top: 2.5rem;
-  margin-left: 4.4rem;
-  margin-right: 1rem;
-}
+  }
+  .wellcome__menu-links{
+  display: inline-block;  
+  width: 70%;
+  }
 .wellcome__menu-links1 {
   display: flex;
+  justify-content: space-around;
   color: rgb(255, 255, 255);
   font-family: "IBM Plex Sans", "IBM Plex Sans Lt";
   font-weight: 500;
@@ -26,7 +47,8 @@
   margin-top: 2.3rem;
 }
 .wellcome__menu-links1-element {
-  margin-right: 2.3rem;
+  display: flex;
+  text-align: center;
   border-bottom: 1px solid transparent;
 }
 .mail {
@@ -95,6 +117,7 @@
 }
 .wellcome__menu-links2 {
   display: flex;
+  justify-content: space-around;
   color: rgb(255, 255, 255);
   font-family: "IBM Plex Sans Lt";
   font-weight: 500;
@@ -133,6 +156,7 @@
   text-align: center;
   color: rgb(255, 255, 255);
 }
+
 /* конец блок wellcome*/
 
 /* блок whywe */

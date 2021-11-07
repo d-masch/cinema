@@ -72,7 +72,8 @@ function renderFilmTableItem(film) {
                  id = "${filmHelper.getId.apply(film)}"
                  />
                  <span class="checkbox-svg">
-                    <svg width=".55rem" 
+                    <svg  
+                    width=".55rem" 
                      height=".45rem" 
                      viewBox="0 0 11 9" 
                      xmlns="http://www.w3.org/2000/svg">
