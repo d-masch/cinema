@@ -40,36 +40,43 @@ const films = [
     name: "История игрушек 4",
     genres: ["Мультфильмы", "фентези", "комедия"],
   },
-  {
-    time: "23:00",
-    name: "Люди в черном: Интернешнл",
-    genres: ["Фантастика", "боевик", "комедия"],
-  },
+  // {
+  //   time: "23:00",
+  //   name: "Люди в черном: Интернешнл",
+  //   genres: ["Фантастика", "боевик", "комедия"],
+  // },
 ];
+class FilmHelper {
+  constructor(film) {
+    this.film = film;
+  }
+  getId() {
+    return (
+      this.film.id || `${this.film.name.replaceAll(" ", "-")}-${this.film.time}`
+    );
+  }
+  getTitle() {
+    return this.film.name;
+  }
+  getTime() {
+    return this.film.time;
+  }
+  getGeneres() {
+    return this.film.genres.join(", ");
+  }
+  
+}
 let tbody = document.getElementById("table-body");
 tbody.innerHTML = "";
-const filmHelper = {
-  getId() {
-    return this.id || `${this.name.replaceAll(" ", "-")}-${this.time}`;
-  },
-  getTitle() {
-    return this.name;
-  },
-  getTime() {
-    return this.time;
-  },
-  getGeneres() {
-    return this.genres.join(", ");
-  },
-};
 function renderFilmTableItem(film) {
+  const filmHelper = new FilmHelper(film);
   return `
   <tr>
         <td> 
-          <label class="checkbox" for = "${filmHelper.getId.apply(film)}">
+          <label class="checkbox" for = "${filmHelper.getId()}">
                <input type = "checkbox"
                  class="table-checkbox"
-                 id = "${filmHelper.getId.apply(film)}"
+                 id = "${filmHelper.getId()}"
                  />
                  <span class="checkbox-svg">
                     <svg  
@@ -85,11 +92,9 @@ function renderFilmTableItem(film) {
                   </span>
            </label>
         </td>
-        <td>${filmHelper.getTime.apply(film)}</td>
-        <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank">${filmHelper.getTitle.apply(
-          film
-        )}</a></td>
-        <td>${filmHelper.getGeneres.apply(film)}</td>
+        <td>${filmHelper.getTime()}</td>
+        <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank">${filmHelper.getTitle()}</a></td>
+        <td>${filmHelper.getGeneres()}</td>
   </tr> `;
 }
 for (const film of films) {
