@@ -3,7 +3,7 @@
         font-size: 1.67vw;
     }
 }
- /* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     html {
         font-size: 2.5vw;
     }
@@ -12,4 +12,4 @@
     html {
         font-size: 4vw;
     }
-}  */
+} 
