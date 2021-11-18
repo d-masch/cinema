@@ -1,15 +1,38 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1140px) {
     html {
-        font-size: 1.67vw;
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 800px) {
     html {
-        font-size: 2.5vw;
+        font-size: 30px;
     }
+    .wellcome__menu-mobile {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1.5rem;
+        background: #fff;
+        z-index: 50;
+        border: 1px solid #000;
+    }
+    .menu-color{
+        color: #555;
+        display: table;
+    }
+    .wellcome__menu-links1, .wellcome__menu-links2{
+        flex-direction: column;
+    }
+
 }
 @media screen and (max-width: 550px) {
     html {
-        font-size: 4vw;
+        font-size: 40px;
     }
-} 
+}
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 60px;
+    }
+}

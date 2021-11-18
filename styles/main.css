@@ -1,12 +1,12 @@
-/* html {
-    font-size: 20px;
-} */
+
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 body {
     box-sizing: border-box;
+    width: 56.2rem;
+    margin: 0 0 0 0;
 }
 .body-fonts {
     font-family: "IBM Plex Sans";
@@ -27,8 +27,8 @@ body {
     font-size: 0.8rem;
 }
 .logo {
-    width: 9rem;
-    height: 4rem;
+    width: 7.9rem;
+    height: 2rem;
     
 }
 /* блок wellcome*/
@@ -53,20 +53,21 @@ body {
     bottom: 0;
     border-left: 56.2rem solid transparent;
 }
-.wellcome__menu {
-    display: flex;
-    text-align: center;
-    max-width: 50rem;
-    margin: 0 auto;
-    justify-content: space-around;
-}
 .wellcome__menu-logo {
-    max-width: 10rem;
-    display: flex;
-    align-items: center;
+    width: 12rem;
+    display: inline-flex;
+    justify-content: center;
     background-color: transparent;
     margin-top: 2.5rem;
 }
+.wellcome__menu {
+    display: inline-flex;
+    text-align: center;
+    max-width: 52rem;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
 .wellcome__menu-links {
     display: inline-block;
     width: 80%;
@@ -130,8 +131,10 @@ body {
     margin: 0 0.5rem 0 0;
 }
 .wellcome__menu-links1-lang {
+    display: inline-flex;
     position: relative;
-    margin-left: 4rem;
+    justify-content: center;
+  
 }
 .wellcome__menu-links1-lang:hover .wellcome__menu-links1-dropdown {
     visibility: visible;
@@ -549,22 +552,20 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
-    flex:1 3 0;
+   
    
 }
 .goods__goods-image2 {
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
-    flex: 1 3 0;
+   
     margin: 0 2rem;
 }
 .goods__goods-image3 {
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
-   
-    flex:1 3 0;
 }
 .goods__goods-images-bg {
     position: absolute;
