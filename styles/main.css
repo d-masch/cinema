@@ -5,8 +5,8 @@ a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.body-styles {
-    text-decoration: none;
+body {
+    box-sizing: border-box;
 }
 .body-fonts {
     font-family: "IBM Plex Sans";
@@ -27,16 +27,18 @@ a {
     font-size: 0.8rem;
 }
 .logo {
-    width: 10rem;
+    width: 9rem;
+    height: 4rem;
     
 }
 /* блок wellcome*/
 .wellcome {
+    margin: 0;
     position: relative;
-  max-width: 56.2rem;
+    max-width: 56.2rem;
     min-height: 106vh;
     background-position: center;
-    background-image: url("/images/up-background.png");
+    background-image: url("/images//Backgroound-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -52,26 +54,26 @@ a {
     border-left: 56.2rem solid transparent;
 }
 .wellcome__menu {
-    text-align: center;
-    max-width: 47rem;
-    margin: 0 auto;
     display: flex;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
     justify-content: space-around;
 }
 .wellcome__menu-logo {
+    max-width: 10rem;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     background-color: transparent;
     margin-top: 2.5rem;
 }
 .wellcome__menu-links {
-    
     display: inline-block;
     width: 80%;
 }
 .wellcome__menu-links1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: rgb(255, 255, 255);
     font-family: "IBM Plex Sans", "IBM Plex Sans Lt";
     font-weight: 500;
@@ -80,11 +82,12 @@ a {
     margin-top: 2.3rem;
 }
 .wellcome__menu-links1-element {
-    display: flex;
+   
     text-align: center;
     border-bottom: 1px solid transparent;
 }
 .mail {
+    
     padding-bottom: 0.25rem;
     border-bottom: 1px solid white;
 }
@@ -99,7 +102,7 @@ a {
     transition: 0.3s;
 }
 .button {
-    margin-left: 0.5rem;
+    margin-left: 3.2rem;
     border-radius: 0.3rem;
     padding: 0.1rem 0.4rem 0 0.2rem;
     background: #fff;
@@ -128,7 +131,7 @@ a {
 }
 .wellcome__menu-links1-lang {
     position: relative;
-    margin-left: 6rem;
+    margin-left: 4rem;
 }
 .wellcome__menu-links1-lang:hover .wellcome__menu-links1-dropdown {
     visibility: visible;
@@ -162,7 +165,7 @@ a {
 }
 .wellcome__menu-links2-element {
     border-bottom: 1px solid transparent;
-    margin-right: 3.7rem;
+    margin-right: 4rem;
 }
 .wellcome__menu-links2-element:hover {
     transition: 0.3s;
@@ -178,7 +181,7 @@ a {
     width: 100%;
     font-weight: 100;
     font-size: 3.4rem;
-    margin-top: 1.6rem;
+    margin-top: 7rem;
     text-align: center;
 }
 .wellcome__giftForAll {
@@ -371,12 +374,12 @@ a {
     position: absolute;
     content: " ";
     display: block;
-    border-top: 7rem solid rgb(255, 255, 255);
+    border-top: 6.2rem solid rgb(255, 255, 255);
     border-right: 56.2rem solid transparent;
 }
 .getgift {
     position: relative;
-    margin-top: 5.6rem;
+    margin-top: 5.1rem;
     width: 56.2rem;
     height: 30rem;
     background-image: url("../images/Background-2.jpg");
@@ -389,7 +392,7 @@ a {
     left: 0;
     right: 0;
     margin-top: 8rem;
-    border-bottom: 7rem solid rgb(255, 255, 255);
+    border-bottom: 6.2rem solid rgb(255, 255, 255);
     bottom: 0;
     border-left: 56.2rem solid transparent;
 }
@@ -411,7 +414,7 @@ a {
     display: inline-block;
     text-align: right;
     color: rgb(255, 255, 255);
-    width: 27.5rem;
+    width: 28rem;
     padding: 4rem 0 2.5rem 1rem;
 }
 .gift-head {
@@ -419,14 +422,16 @@ a {
     font-weight: 500;
     font-size: 2.4rem;
     color: rgb(255, 255, 255);
-    padding: 1rem;
+    padding: 2.5rem 0  0  0;
+    text-align: right;
 }
 
 .gift-text {
     font-family: "IBM Plex Sans Lt";
     font-weight: 400;
-    padding: 1.5rem 0 1rem 1rem;
+    padding: 2.2rem 2rem 0 0;
     font-size: 0.55rem;
+    line-height: 1.33;
     color: rgb(255, 255, 255);
     width: 27.5rem;
 }
@@ -516,7 +521,8 @@ a {
 .goods {
     display: block;
     width: 56.2rem;
-    height: 27rem;
+    height: 30rem;
+    padding-bottom: 3rem;
 }
 .goods__goods-head {
     margin: 4rem 0 1rem 7rem;
@@ -527,20 +533,38 @@ a {
     width: 27.4rem;
     margin: 0 0 0 7rem;
     font-size: 0.55rem;
+    padding-bottom: 3rem;
 }
 .goods__goods-images {
-    display: block;
-    margin-left: 7rem;
-    width: 42.7rem;
+    display: flex;
+    
+    justify-content: center;
     cursor: pointer;
+    width: 43rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 .goods__goods-image1 {
     position: relative;
     overflow: hidden;
-    display: block;
-    float: left;
-    margin-right: 2.3rem;
     border-radius: 0.5rem;
+    flex:1 3 0;
+   
+}
+.goods__goods-image2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    flex: 1 3 0;
+    margin: 0 2rem;
+}
+.goods__goods-image3 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+   
+    flex:1 3 0;
 }
 .goods__goods-images-bg {
     position: absolute;
@@ -602,24 +626,11 @@ a {
     text-align: center;
     vertical-align: auto;
 }
-.goods__goods-image2 {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    float: left;
-    margin-right: 2.3rem;
-    border-radius: 0.5rem;
-}
+
 .goods__goods-image2:hover .goods__goods-images-bg {
     transform: skew(0deg, 0deg);
 }
-.goods__goods-image3 {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    float: left;
-    border-radius: 0.5rem;
-}
+
 .goods__goods-image3:hover .goods__goods-images-bg {
     transform: skew(0deg, 0deg);
 }
@@ -709,7 +720,7 @@ a {
 .feedback {
     display: block;
     margin-top: 2.1rem;
-    margin-bottom: 2.1rem;
+    margin-bottom: 3rem;
     width: 56.2rem;
     height: 26.35rem;
     border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
@@ -757,12 +768,14 @@ a {
     width: 56.2rem;
     height: 19rem;
 }
+.map-img{
+    width: 49rem;
+}
 /* конец блока карта */
 
 /* блок футер */
 .footer {
     display: block;
-
     width: 56.2rem;
     background-color: rgb(163, 204, 64);
 }
@@ -775,7 +788,7 @@ a {
 }
 .footer__content-col1 {
     margin-left: 4rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 .footer__logo {
     display: block;
@@ -787,8 +800,7 @@ a {
 .footer__text {
     font-family: "IBM Plex Sans Lt";
     font-weight: 400;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+     margin-bottom: 1.5rem;
     font-size: 0.7rem;
     width: 13.5rem;
     line-height: 1.3;
