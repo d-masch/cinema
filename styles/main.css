@@ -27,16 +27,18 @@ body {
     font-size: 0.8rem;
 }
 .logo {
-    width: 7.9rem;
-    height: 2rem;
-    
+    width: 8rem;
+    height: 3rem;
+   
 }
 /* блок wellcome*/
 .wellcome {
-    margin: 0;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
     position: relative;
     max-width: 56.2rem;
-    min-height: 106vh;
+    min-height: 113vh;
     background-position: center;
     background-image: url("/images//Backgroound-1.jpg");
     background-repeat: no-repeat;
@@ -54,41 +56,44 @@ body {
     border-left: 56.2rem solid transparent;
 }
 .wellcome__menu-logo {
-    width: 12rem;
     display: inline-flex;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: right;
+    flex-flow: row;
+    width: 12.4rem;
+    height: 5.7rem;
     background-color: transparent;
-    margin-top: 2.5rem;
+}
+.wellcome__menu-burger{
+    display: none;
+}
+.wellcome__menu-mobile{
+    display: inline-flex;
+    height: 5rem;
 }
 .wellcome__menu {
     display: inline-flex;
     text-align: center;
-    max-width: 52rem;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 38rem;
+    margin-top: 2.5rem;
     justify-content: space-around;
+    height: 2.5rem;
 }
 
-.wellcome__menu-links {
-    display: inline-block;
-    width: 80%;
-}
 .wellcome__menu-links1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 42rem;
     color: rgb(255, 255, 255);
     font-family: "IBM Plex Sans", "IBM Plex Sans Lt";
     font-weight: 500;
     font-size: 0.6rem;
-    line-height: 1.3;
-    margin-top: 2.3rem;
 }
 .wellcome__menu-links1-element {
-   
-    text-align: center;
     border-bottom: 1px solid transparent;
 }
 .mail {
-    
     padding-bottom: 0.25rem;
     border-bottom: 1px solid white;
 }
@@ -102,8 +107,11 @@ body {
     color: rgb(163, 204, 64);
     transition: 0.3s;
 }
+.wellcome__menu-links-button{
+    margin-right: 4.3rem;
+}
 .button {
-    margin-left: 3.2rem;
+   
     border-radius: 0.3rem;
     padding: 0.1rem 0.4rem 0 0.2rem;
     background: #fff;
@@ -130,32 +138,38 @@ body {
 .button_1 {
     margin: 0 0.5rem 0 0;
 }
-.wellcome__menu-links1-lang {
+.wellcome__menu-lang {
     display: inline-flex;
     position: relative;
-    justify-content: center;
-  
+    font-family: "IBM Plex Sans Lt";
+    font-weight: 500;
+    font-size: 0.6rem;
+    line-height: 1.3;
+    margin-top: 2.45rem;
 }
-.wellcome__menu-links1-lang:hover .wellcome__menu-links1-dropdown {
+.wellcome__menu-lang:hover .wellcome__menu-lang-dropdown {
     visibility: visible;
     opacity: 1;
 }
-.wellcome__menu-links1-lang svg {
+.wellcome__menu-lang svg {
     fill: white;
 }
-.wellcome__menu-links1-dropdown {
+.wellcome__menu-lang-dropdown {
     position: absolute;
     visibility: hidden;
     opacity: 0;
     background-color: #666;
     transition: 0.3s;
+    top:.7rem;
+    left: .7rem;
 }
-.wellcome__menu-links1-dropdown a {
+.wellcome__menu-lang-dropdown a {
     display: table;
     color: #fff;
 }
 .wellcome__menu-links2 {
     display: flex;
+    width: 42rem;
     justify-content: space-around;
     color: rgb(255, 255, 255);
     font-family: "IBM Plex Sans Lt";
@@ -168,7 +182,7 @@ body {
 }
 .wellcome__menu-links2-element {
     border-bottom: 1px solid transparent;
-    margin-right: 4rem;
+
 }
 .wellcome__menu-links2-element:hover {
     transition: 0.3s;
@@ -184,8 +198,9 @@ body {
     width: 100%;
     font-weight: 100;
     font-size: 3.4rem;
-    margin-top: 7rem;
+    margin-top: 6.1rem;
     text-align: center;
+
 }
 .wellcome__giftForAll {
     font-family: "IBM Plex Sans";
@@ -195,6 +210,10 @@ body {
     padding-bottom: 6rem;
     text-align: center;
     color: rgb(255, 255, 255);
+    width: 56.2rem;
+}
+.cross{
+    visibility: hidden;
 }
 
 /* конец блок wellcome*/

@@ -1,35 +1,182 @@
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
     html {
         font-size: 20px;
     }
 }
 @media screen and (max-width: 800px) {
     html {
-        font-size: 30px;
+        font-size: 80px;
     }
+  .logo-svg{
+      width: 16rem;
+      height: 8rem;
+  }
     .wellcome__menu-mobile {
+        display: block;
         position: fixed;
+        width: 12rem;
+        height: 23rem;
         top: 0;
         bottom: 0;
         right: 0;
-        padding: 1.5rem;
+        padding: 1.5rem 0 0 2rem;
         background: #fff;
         z-index: 50;
         border: 1px solid #000;
+        flex-wrap: wrap;
     }
-    .menu-color{
+    .wellcome__menu {
+        display: block;
+        position: relative;
+    }
+    .menu-color {
+        margin: 0.5rem 0 0.5rem 0;
         color: #555;
         display: table;
     }
-    .wellcome__menu-links1, .wellcome__menu-links2{
-        flex-direction: column;
+    .wellcome__menu-lang {
+        display: block;
+        position: absolute;
+        font-size: 0.5rem;
+        top: 0;
+        left: 2rem;
+        margin-top: 1.5rem;
+    }
+    .wellcome__menu-lang svg {
+        fill: rgb(163, 204, 64);
+    }
+    .wellcome__menu-lang span {
+        color: rgb(163, 204, 64);
+    }
+    .wellcome__menu-lang-dropdown {
+        opacity: 0;
+        background-color: white;
+        transition: 0.3s;
+    }
+    .wellcome__menu-lang-dropdown a {
+        display: table;
+        color: rgb(163, 204, 64);
+    }
+    #menu > div.wellcome__menu-links1 > div:nth-child(1) > a,
+    #menu > div.wellcome__menu-links1 > div:nth-child(3) > a {
+        margin-top: 0;
     }
 
+    .button {
+        margin-left: 0;
+        margin-top: 1rem;
+        position: absolute;
+        left: 0;
+    }
+    .wellcome__menu-links1 {
+        display: block;
+        position: absolute;
+        width: 10rem;
+        top: 10rem;
+    }
+    .wellcome__menu-links1-element:hover,
+    .wellcome__menu-links2-element:hover {
+        border-color: white;
+    }
+    .wellcome__menu-links2 {
+        display: block;
+        width: 10rem;
+    }
+    .cross{
+        position: absolute;
+        visibility: visible;
+        top: 1.5rem;
+        right: 1rem;
+    }
 }
 @media screen and (max-width: 550px) {
     html {
-        font-size: 40px;
+        font-size: 100px;
     }
+    .logo-svg{
+        width: 16rem;
+        height: 8rem;
+    }
+      .wellcome__menu-mobile {
+          display: block;
+          position: fixed;
+          width: 10rem;
+          height: 23rem;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          padding: 1.5rem 0 0 2rem;
+          background: #fff;
+          z-index: 50;
+          border: 1px solid #000;
+          flex-wrap: wrap;
+      }
+      .wellcome__menu {
+          display: block;
+          position: relative;
+      }
+      .menu-color {
+          margin: 0.5rem 0 0.5rem 0;
+          color: #555;
+          display: table;
+      }
+      .wellcome__menu-lang {
+          display: block;
+          position: absolute;
+          font-size: 0.5rem;
+          top: 0;
+          left: 2rem;
+          margin-top: 1.5rem;
+      }
+      .wellcome__menu-lang svg {
+          fill: rgb(163, 204, 64);
+      }
+      .wellcome__menu-lang span {
+          color: rgb(163, 204, 64);
+      }
+      .wellcome__menu-lang-dropdown {
+          opacity: 0;
+          background-color: white;
+          transition: 0.3s;
+      }
+      .wellcome__menu-lang-dropdown a {
+          display: table;
+          color: rgb(163, 204, 64);
+      }
+      #menu > div.wellcome__menu-links1 > div:nth-child(1) > a,
+      #menu > div.wellcome__menu-links1 > div:nth-child(3) > a {
+          margin-top: 0;
+      }
+  
+      .button {
+          margin-left: 0;
+          margin-top: 1rem;
+          position: absolute;
+          left: 0;
+      }
+      .wellcome__menu-links1 {
+          display: block;
+          position: absolute;
+          width: 10rem;
+          top: 10rem;
+      }
+      .wellcome__menu-links1-element:hover,
+      .wellcome__menu-links2-element:hover {
+          border-color: white;
+      }
+      .wellcome__menu-links2 {
+          display: block;
+          width: 10rem;
+      }
+      .cross{
+          position: absolute;
+          visibility: visible;
+          top: 1.5rem;
+          right: 1rem;
+      }
+      .cross-svg{
+        width="27" height="27" viewBox="0 0 27 27" 
+      }
 }
 @media screen and (max-width: 320px) {
     html {
