@@ -1,0 +1,184 @@
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 27px;
+    }
+    .logo-svg {
+        width: 16rem;
+        height: 8rem;
+    }
+    .wellcome__menu-mobile {
+        display: block;
+        position: fixed;
+        width: 12rem;
+        height: 23rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1.5rem 0 0 2rem;
+        background: #fff;
+        z-index: 50;
+        border: 1px solid #000;
+        flex-wrap: wrap;
+    }
+    .wellcome__menu-burger{
+        display: block;
+        position: absolute;
+        top: 5rem;
+        right: 7rem;
+    }
+    .wellcome__menu-burger svg{
+        width: 3rem;
+         height: 2rem;
+    }
+    .wellcome__menu {
+        display: block;
+        position: relative;
+    }
+    .menu-color {
+        margin: 0.5rem 0 0.5rem 0;
+        color: #555;
+        display: table;
+    }
+    .wellcome__menu-lang {
+        display: block;
+        position: absolute;
+        font-size: 0.5rem;
+        top: 0;
+        left: 2rem;
+        margin-top: 1.5rem;
+    }
+    .wellcome__menu-lang svg {
+        fill: rgb(163, 204, 64);
+    }
+    .wellcome__menu-lang span {
+        color: rgb(163, 204, 64);
+    }
+    .wellcome__menu-lang-dropdown {
+        opacity: 0;
+        background-color: white;
+        transition: 0.3s;
+    }
+    .wellcome__menu-lang-dropdown a {
+        display: table;
+        color: rgb(163, 204, 64);
+    }
+    #menu > div.wellcome__menu-links1 > div:nth-child(1) > a,
+    #menu > div.wellcome__menu-links1 > div:nth-child(3) > a {
+        margin-top: 0;
+    }
+    .button {
+        margin-left: 0;
+        margin-top: 1rem;
+        position: absolute;
+        left: 0;
+    }
+    .wellcome__menu-links1 {
+        display: block;
+        position: absolute;
+        width: 10rem;
+        top: 10rem;
+    }
+    .wellcome__menu-links1-element:hover,
+    .wellcome__menu-links2-element:hover {
+        border-color: white;
+    }
+    .wellcome__menu-links2 {
+        display: block;
+        width: 10rem;
+    }
+    .cross {
+        position: absolute;
+        visibility: visible;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .body-whywe-heads1 {
+        font-size: 1.2rem;
+        margin: 1.85rem 0 1.45rem 0;
+    }
+    .body-whywe-heads2 {
+        font-size: 1.2rem;
+        margin: 1.85rem 0rem 1.45rem 0rem;
+    }
+    .whywe__atmosfer img,
+    .whywe__full-sub img,
+    .whywe__kisses img,
+    .whywe__big-screen img,
+    .whywe__obemniy-zvuk img,
+    .whywe__comfort-chairs img {
+        width: 14rem;
+    }
+    .body-whywe-text {
+        font-size: 0.65rem;
+        line-height: 1.3;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .movietable__table {
+        width: 50rem;
+        margin-top: 4.2rem;
+        margin-left: 3.2rem;
+    }
+    .movies-head_text {
+        font-size: 0.65rem;
+    }
+    .goods__goods-descrtext {
+        font-size: 0.65rem;
+    }
+    .goods__goods-images {
+        width: 43rem;
+    }
+    .goods__goods-image1 img {
+        width: 14rem;
+    }
+
+    .goods__goods-image2 img {
+        width: 14rem;
+    }
+    .goods__goods-image3 img {
+        width: 14rem;
+    }
+    .goods__goods-image2 {
+        margin: 0;
+    }
+    .goods__goods-images-bg {
+        width: 14rem;
+        height: 11rem;
+        top: 10rem;
+    }
+    .feedback__gradient-image {
+        margin-left: 3rem;
+        height: 26.35rem;
+        width: 23rem;
+    }
+    .feedback__input-form {
+        display: inline-block;
+        overflow: hidden;
+        max-width: 23rem;
+        padding-left: 3rem;
+        height: 26.35rem;
+    }
+    .feedback__head-fonts {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    .review__review-descrtext {
+        font-size: 0.65rem;
+    }
+    .logo-svg {
+        position: absolute;
+        width: 12rem;
+        height: 10rem;
+        top: 0rem;
+        left: 7rem;
+    }
+    .logo-svg-footer {  
+        width: 12rem;
+        height: 5rem;
+    }
+}

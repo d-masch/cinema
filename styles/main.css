@@ -1,4 +1,3 @@
-
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -26,7 +25,7 @@ body {
     font-weight: 500;
     font-size: 0.8rem;
 }
-.logo {
+.logo-svg {
     width: 8rem;
     height: 3rem;
    
@@ -38,7 +37,7 @@ body {
     flex-wrap: wrap;
     position: relative;
     max-width: 56.2rem;
-    min-height: 113vh;
+    min-height: 133vh;
     background-position: center;
     background-image: url("/images//Backgroound-1.jpg");
     background-repeat: no-repeat;
@@ -66,6 +65,7 @@ body {
 }
 .wellcome__menu-burger{
     display: none;
+    position: absolute;
 }
 .wellcome__menu-mobile{
     display: inline-flex;
@@ -200,14 +200,13 @@ body {
     font-size: 3.4rem;
     margin-top: 6.1rem;
     text-align: center;
-
 }
 .wellcome__giftForAll {
     font-family: "IBM Plex Sans";
     font-weight: 400;
     font-size: 2.05rem;
     margin-top: 1.7rem;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
     text-align: center;
     color: rgb(255, 255, 255);
     width: 56.2rem;
@@ -275,19 +274,22 @@ body {
     justify-content: center;
     justify-content: space-around;
 }
-.body-whywe-heads {
+.body-whywe-heads1, .body-whywe-heads2 {
     font-family: "IBM Plex Sans";
     font-weight: 600;
     font-size: 1rem;
     text-align: center;
-    margin: 1.85rem 0 1.45rem 0;
+    margin: 1.85rem 0 1rem 0;
 }
+
+
 .body-whywe-text {
     font-family: "IBM Plex Sans Lt";
     font-weight: 400;
     font-size: 0.55rem;
     line-height: 1.3;
     text-align: center;
+    padding-bottom: 2rem;
 }
 /* конец блок whywe */
 
@@ -559,7 +561,6 @@ body {
 }
 .goods__goods-images {
     display: flex;
-    
     justify-content: center;
     cursor: pointer;
     width: 43rem;
@@ -571,14 +572,11 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
-   
-   
 }
 .goods__goods-image2 {
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
-   
     margin: 0 2rem;
 }
 .goods__goods-image3 {
@@ -798,6 +796,7 @@ body {
     display: block;
     width: 56.2rem;
     background-color: rgb(163, 204, 64);
+    padding-bottom: 3rem;
 }
 .footer__content {
     display: flex;
@@ -807,8 +806,12 @@ body {
     font-weight: 400;
 }
 .footer__content-col1 {
-    margin-left: 4rem;
+    margin-left: 6rem;
     margin-top: 4rem;
+}
+.logo-svg-footer {  
+    width: 11rem;
+    height: 5rem;
 }
 .footer__logo {
     display: block;
@@ -834,7 +837,7 @@ body {
 }
 .footer__content-col2 {
     margin-top: 5rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
     font-size: 0.6rem;
     width: 5.5rem;
 }
@@ -845,7 +848,7 @@ body {
 }
 .footer__content-col-head {
     font-family: "IBM Plex Sans Lt";
-    font-weight: 4s00;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 1.7rem;

@@ -1,0 +1,376 @@
+/* переопределение стилей под 550 px */
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 39px;
+    }
+
+    .wellcome__menu-mobile {
+        display: block;
+        position: fixed;
+        width: 18rem;
+        height: 32rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1.5rem 0 0 6rem;
+        background: #fff;
+        z-index: 50;
+        border: 1px solid #000;
+        flex-wrap: wrap;
+    }
+    .wellcome__menu-burger{
+        display: block;
+        position: absolute;
+       
+        top: 5rem;
+        right: 7rem;
+    }
+    .wellcome__menu-burger svg{
+        width: 4rem;
+         height: 2rem;
+    }
+    .wellcome__menu {
+        display: block;
+        position: relative;
+    }
+    .menu-color {
+        margin: 0.5rem 0 0.5rem 0;
+        color: #555;
+        display: table;
+    }
+    .wellcome__menu-lang {
+        display: block;
+        position: absolute;
+        font-size: 1rem;
+        top: 0;
+        left: 6rem;
+        margin-top: 2.5rem;
+    }
+    .wellcome__menu-lang svg {
+        fill: rgb(163, 204, 64);
+        width: 1rem;
+        height: .6rem;
+    }
+    .wellcome__menu-lang span {
+        color: rgb(163, 204, 64);
+    }
+    .wellcome__menu-lang-dropdown {
+        opacity: 0;
+        background-color: white;
+        transition: 0.3s;
+        top: 1rem;
+    left: 1rem;
+    }
+    .wellcome__menu-lang-dropdown a {
+        display: table;
+        color: rgb(163, 204, 64);
+    }
+    #menu > div.wellcome__menu-links1 > div:nth-child(1) > a,
+    #menu > div.wellcome__menu-links1 > div:nth-child(3) > a {
+        margin-top: 0;
+    }
+
+    .button {
+        margin-left: 0;
+        margin-top: 1rem;
+        position: absolute;
+        left: 0;
+    }
+    .wellcome__menu-links1 {
+        font-size: 1rem;
+        display: block;
+        position: absolute;
+        width: 10rem;
+        top: 15rem;
+    }
+    .wellcome__menu-links1-element:hover,
+    .wellcome__menu-links2-element:hover {
+        border-color: white;
+    }
+    .wellcome__menu-links2 {
+        margin-top: 5rem;
+        display: block;
+        width: 10rem;
+        font-size: 1rem;
+    }
+    .cross {
+        position: absolute;
+        visibility: visible;
+        top: 3rem;
+        right: 3rem;
+    }
+    .cross-svg {
+        width: 1rem;
+        height: 1rem;
+    }
+    .button {
+        border-radius: 0.3rem;
+        padding: 0.1rem 0.4rem 0 0.2rem;
+        background: #fff;
+        border: 2px solid #fff;
+        border: #333 1px solid;
+    }
+    .button span {
+        color: #333;
+        font-size: 1rem;
+    }
+    .button svg {
+        fill: #333;
+        padding-right: 0.2rem;
+        width: .8rem;
+        height: .8rem;
+    }
+    .button:hover {
+        background: rgb(163, 204, 64);
+        border-color: #eaede2;
+    }
+    .whywe {
+        opacity: 0.99;
+        width: 56.2rem;
+        margin-top: 0rem;
+    }
+    .whywe__wellcome{
+        display: grid;
+        justify-content: center;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    .whywe__wellcome-whywe {
+      justify-items: center;
+        margin-top: 2rem;
+        font-family: "IBM Plex Sans";
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 1.33;
+        color: rgb(163, 204, 64);
+        margin: auto;   
+    }
+    .whywe__wellcome-text {
+        font-family: "IBM Plex Sans Lt";
+        font-weight: 400;
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 1.3;
+    }
+    .whywe-content {
+        margin-top: 0rem;
+        margin-left: 8rem;
+        width: 40rem;
+    }
+    .whywe__wellcome-wellcome {
+    order: -1;
+        width: 40rem;
+        height: 11rem;
+        background-color: white;
+        border: solid 1pt rgb(255, 255, 255);
+        box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
+        border-radius: 0.5rem;
+    }
+    .body-whywe-heads1 {
+        font-size: 1.2rem;
+        margin: 1.85rem 0 1.45rem 0;
+    }
+    .body-whywe-heads2 {
+        font-size: 1.2rem;
+        margin: 1.85rem 0rem 1.45rem 0;
+    }
+    .whywe__atmosfer img,
+    .whywe__full-sub img,
+    .whywe__kisses img,
+    .whywe__big-screen img,
+    .whywe__obemniy-zvuk img,
+    .whywe__comfort-chairs img {
+        width: 18rem;
+    }
+    .body-whywe-text {
+        font-size: 0.65rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+    .movietable__heading { 
+        font-size: 2.4rem;
+        line-height: 1.3;
+        color: rgb(163, 204, 64);
+        margin-top: 3rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    .movies-head {
+        margin: 0rem 0 0rem 0rem;
+    }
+    .movietable__table {
+        width: 54rem;
+        margin-top: 4.2rem;
+        margin-left: 1rem;
+    }
+    .table-fonts {
+        color: rgb(255, 255, 255);
+        font-family: "IBM Plex Sans";
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 3.27;
+        text-align: left;
+    }
+    .table-footer-fonts {
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 0.72rem;
+    }
+    .getgift {height: 36rem;}
+    .gift-text {
+        font-family: "IBM Plex Sans Lt";
+        font-weight: 400;
+        padding: 2.2rem 2rem 0 0;
+        font-size: 0.7rem;
+        line-height: 1.33;
+        color: rgb(255, 255, 255);
+        width: 32rem;
+    }
+    .button_2 span{
+      font-size: 1.3rem;
+    }
+    .movies-head {
+        margin: 2rem 0 1rem 0rem;
+        text-align: center;
+    }
+    .movies-head_text {
+        font-family: "IBM Plex Sans Lt";
+        font-weight: 400;
+        width: 35rem;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        font-size: 0.7rem;
+        margin: auto;
+        text-align: center;
+    }
+    .movies-images_descrtext2 {
+        font-family: "IBM Plex Sans Lt";
+        font-weight: 400;
+        padding: 0 1rem 1rem 1rem;
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
+    .movies-images {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .movies-head_text {
+        font-size: 0.65rem;
+    }
+    .goods__goods-descrtext {
+        font-size: 0.65rem;
+    }
+    .goods__goods-images {
+        width: 43rem;
+    }
+    .goods__goods-image1 img {
+        width: 14rem;
+    }
+
+    .goods__goods-image2 img {
+        width: 14rem;
+    }
+    .goods__goods-image3 img {
+        width: 14rem;
+    }
+    .goods__goods-image2 {
+        margin: 0;
+    }
+    .goods__goods-images-bg {
+        width: 14rem;
+        height: 11rem;
+        top: 10rem;
+    }
+    .review {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin-top: 1rem;
+        width: 56.2rem;
+        height: 40rem;
+        background-image: url("../images/rewue-bg.png");
+        background-size: cover;
+        background-size: 56.2rem;
+    }
+    .review__review-head {
+        padding-top: 3rem;
+        margin: 2rem 0 2rem 0rem;
+        text-align: center;
+    }
+    .review__review-descrtext {
+        margin: auto;
+        font-size: 0.7rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .review__review-item {
+        position: relative;
+        display: flex;
+        width: 56rem;
+        cursor: pointer;
+        margin-left: 4rem;
+    }
+    .review__review-item1-content {
+        width: 14rem;
+        background-color: rgba(163, 204, 64, 0.8);
+        border-radius: 0.5rem;
+    }
+    .review__review-item1-content {
+        width: 10.6rem;
+        background-color: rgba(163, 204, 64, 0.8);
+        border-radius: 0.5rem;
+    }
+    .review__review-descrtext {
+        font-size: 0.8rem;
+    }
+/* добавлены стили кнопок навигации  */
+.owl-carousel .owl-nav button.owl-next{
+    top: 7rem;
+    right: 23rem;
+  }
+  .owl-carousel .owl-nav button.owl-prev{
+    top: 7rem;
+    left: 15rem;
+  }
+  /* */
+  .feedback {
+    display: block;
+    margin-top: 2.1rem;
+    margin-bottom: 3rem;
+    width: 56.2rem;
+    height: 26.35rem;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+
+}
+    .feedback__input-form {
+        display: inline-block;
+        overflow: hidden;
+        max-width: 45rem;
+        width: 45rem;
+        padding-left: 3rem;
+        height: 26.35rem;
+        margin-left: 3rem;
+    }
+    .feedback__head-fonts {
+        font-size: 3rem;
+        line-height: 1.3;
+    }
+    .feedback-fonts {
+        font-size: 1.5rem;
+        padding-left: 3rem;
+    }
+    .feedback__gradient-image {
+        display: none
+    }
+.logo-svg {
+    position: absolute;
+    width: 12rem;
+    height: 10rem;
+    top: 0rem;
+    left: 7rem;
+}
+.logo-svg-footer {  
+    width: 11rem;
+    height: 5rem;
+}
+}
