@@ -3,9 +3,13 @@ a {
     color: rgb(255, 255, 255);
 }
 body {
-    box-sizing: border-box;
-    width: 56.2rem;
-    margin: 0 0 0 0;
+    max-width: 1124px;
+    min-width: 320px;
+}
+.main {
+    min-height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 .body-fonts {
     font-family: "IBM Plex Sans";
@@ -28,7 +32,6 @@ body {
 .logo-svg {
     width: 8rem;
     height: 3rem;
-   
 }
 /* блок wellcome*/
 .wellcome {
@@ -36,12 +39,11 @@ body {
     align-content: flex-start;
     flex-wrap: wrap;
     position: relative;
-    max-width: 56.2rem;
-    min-height: 133vh;
+    height: 33.4rem;
     background-position: center;
-    background-image: url("/images//Backgroound-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 auto;
 }
 .wellcome::after {
     position: absolute;
@@ -52,7 +54,7 @@ body {
     margin-top: 8rem;
     border-bottom: 6.3rem solid rgb(255, 255, 255);
     bottom: 0;
-    border-left: 56.2rem solid transparent;
+    border-left: 1124px solid transparent;
 }
 .wellcome__menu-logo {
     display: inline-flex;
@@ -60,14 +62,14 @@ body {
     justify-content: right;
     flex-flow: row;
     width: 12.4rem;
-    height: 5.7rem;
+    height: 5.2rem;
     background-color: transparent;
 }
-.wellcome__menu-burger{
+.wellcome__menu-burger {
     display: none;
     position: absolute;
 }
-.wellcome__menu-mobile{
+.wellcome__menu-mobile {
     display: inline-flex;
     height: 5rem;
 }
@@ -107,11 +109,10 @@ body {
     color: rgb(163, 204, 64);
     transition: 0.3s;
 }
-.wellcome__menu-links-button{
+.wellcome__menu-links-button {
     margin-right: 4.3rem;
 }
 .button {
-   
     border-radius: 0.3rem;
     padding: 0.1rem 0.4rem 0 0.2rem;
     background: #fff;
@@ -160,8 +161,8 @@ body {
     opacity: 0;
     background-color: #666;
     transition: 0.3s;
-    top:.7rem;
-    left: .7rem;
+    top: 0.7rem;
+    left: 0.7rem;
 }
 .wellcome__menu-lang-dropdown a {
     display: table;
@@ -182,7 +183,6 @@ body {
 }
 .wellcome__menu-links2-element {
     border-bottom: 1px solid transparent;
-
 }
 .wellcome__menu-links2-element:hover {
     transition: 0.3s;
@@ -195,23 +195,23 @@ body {
     font-family: "IBM Plex Sans";
     color: rgb(255, 255, 255);
     font-style: normal;
-    width: 100%;
+    margin: 0 auto;
     font-weight: 100;
     font-size: 3.4rem;
-    margin-top: 6.1rem;
+    margin-top: 6.7rem;
     text-align: center;
 }
 .wellcome__giftForAll {
     font-family: "IBM Plex Sans";
     font-weight: 400;
     font-size: 2.05rem;
-    margin-top: 1.7rem;
+    
     padding-bottom: 8rem;
     text-align: center;
     color: rgb(255, 255, 255);
-    width: 56.2rem;
+    margin: 1.7rem auto;
 }
-.cross{
+.cross {
     visibility: hidden;
 }
 
@@ -220,7 +220,6 @@ body {
 /* блок whywe */
 .whywe {
     opacity: 0.99;
-    width: 56.2rem;
     margin-top: -8rem;
 }
 .whywe__wellcome {
@@ -228,14 +227,14 @@ body {
 }
 .whywe__wellcome-whywe {
     float: left;
-    margin-top: 9.5rem;
+    margin: 9.5rem .8rem 0 0;
     font-family: "IBM Plex Sans";
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 1.33;
     color: rgb(163, 204, 64);
     text-align: center;
-    width: 28.2rem;
+    width: 27.5rem;
 }
 .whywe__wellcome-wellcome {
     font-family: "IBM Plex Sans";
@@ -264,7 +263,7 @@ body {
     line-height: 1.3;
 }
 .whywe-content {
-    margin-top: 4.85rem;
+    margin-top: 4.5rem;
     margin-left: 5.5rem;
     width: 45rem;
 }
@@ -274,14 +273,14 @@ body {
     justify-content: center;
     justify-content: space-around;
 }
-.body-whywe-heads1, .body-whywe-heads2 {
+.body-whywe-heads1,
+.body-whywe-heads2 {
     font-family: "IBM Plex Sans";
     font-weight: 600;
     font-size: 1rem;
     text-align: center;
-    margin: 1.85rem 0 1rem 0;
+    margin: 2rem 0 1.5rem 0;
 }
-
 
 .body-whywe-text {
     font-family: "IBM Plex Sans Lt";
@@ -289,14 +288,18 @@ body {
     font-size: 0.55rem;
     line-height: 1.3;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 2.6rem;
 }
 /* конец блок whywe */
 
 /*стили таблицы*/
 .movietable {
-    width: 56.2rem;
+    max-width: 100%;
+    min-width: 320px;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.movietable__table {
+    overflow-x: auto;
 }
 .table-checkbox {
     margin-left: 0.5rem;
@@ -323,7 +326,7 @@ body {
 }
 .movietable__table {
     width: 42.45rem;
-    margin-top: 4.2rem;
+    margin-top: 4.05rem;
     margin-left: 6.85rem;
 }
 .movietable__heading {
@@ -332,7 +335,7 @@ body {
     font-size: 2.4rem;
     line-height: 1.3;
     color: rgb(163, 204, 64);
-    margin-top: 8.55rem;
+    margin-top: 5.8rem;
     margin-left: 6.8rem;
 }
 .movietable__table-head {
@@ -398,17 +401,16 @@ body {
     position: absolute;
     content: " ";
     display: block;
-    border-top: 6.2rem solid rgb(255, 255, 255);
-    border-right: 56.2rem solid transparent;
+    border-top: 6rem solid rgb(255, 255, 255);
+    border-right: 1124px solid transparent;
 }
 .getgift {
     position: relative;
     margin-top: 5.1rem;
-    width: 56.2rem;
-    height: 30rem;
+    width: 100%;
+    height: 29.5rem;
     background-image: url("../images/Background-2.jpg");
 }
-
 .getgift::after {
     position: absolute;
     content: " ";
@@ -416,12 +418,16 @@ body {
     left: 0;
     right: 0;
     margin-top: 8rem;
-    border-bottom: 6.2rem solid rgb(255, 255, 255);
+    border-bottom: 5rem solid rgb(255, 255, 255);
     bottom: 0;
-    border-left: 56.2rem solid transparent;
+    border-left: 1124px solid transparent;
 }
 .flex_1 {
     display: flex;
+}
+.get-gift {
+    float: right;
+    font-size: 1rem;
 }
 .getgift-giftimage {
     float: left;
@@ -439,14 +445,14 @@ body {
     text-align: right;
     color: rgb(255, 255, 255);
     width: 28rem;
-    padding: 4rem 0 2.5rem 1rem;
+    padding: 4rem 0 3rem 1rem;
 }
 .gift-head {
     font-family: "IBM Plex Sans";
     font-weight: 500;
     font-size: 2.4rem;
     color: rgb(255, 255, 255);
-    padding: 2.5rem 0  0  0;
+    padding: 2.4rem 0 0 0;
     text-align: right;
 }
 
@@ -468,10 +474,10 @@ body {
 
 /*movies блок  Фильмы*/
 .movies {
-    width: 56.2rem;
+    max-width: 100%;
 }
 .movies-head {
-    margin: 2rem 0 1rem 7rem;
+    margin: 3rem 0 1rem 7rem;
 }
 .movies-head_text {
     font-family: "IBM Plex Sans Lt";
@@ -495,10 +501,10 @@ body {
 }
 .movies-images_movie {
     position: relative;
-    width: 14.5rem;
+    width: 14rem;
 }
 .movies-images_image {
-    width: 14.5rem;
+    width: 14.3rem;
 }
 .movies-images_movie:hover .movies-images_shadow {
     opacity: 0;
@@ -544,12 +550,12 @@ body {
 /* блок  goods  (товары) */
 .goods {
     display: block;
-    width: 56.2rem;
+    width: 100%;
     height: 30rem;
     padding-bottom: 3rem;
 }
 .goods__goods-head {
-    margin: 4rem 0 1rem 7rem;
+    margin: 3.8rem 0 1.5rem 7rem;
 }
 .goods__goods-descrtext {
     font-family: "IBM Plex Sans Lt";
@@ -586,14 +592,14 @@ body {
 }
 .goods__goods-images-bg {
     position: absolute;
-    width: 15rem;
+    width: 14rem;
     height: 9rem;
     background: rgba(163, 204, 64, 0.8);
     bottom: 0;
-    top: 10rem;
+    top: 9.6rem;
     left: 0;
     right: 0;
-    transform: skew(0deg, -20deg);
+    transform: skew(0deg, -16deg);
 }
 .goods__goods-image1:hover .goods__goods-images-bg {
     transform: skew(0deg, 0deg);
@@ -608,7 +614,7 @@ body {
     color: white;
     height: 5rem;
     bottom: 0;
-    top: 12rem;
+    top: 13rem;
     left: 1rem;
     right: 0;
     text-align: center;
@@ -623,7 +629,7 @@ body {
     color: white;
     height: 5rem;
     bottom: 0;
-    top: 12rem;
+    top: 11.5rem;
     left: 1rem;
     right: 0;
     text-align: center;
@@ -659,17 +665,17 @@ body {
     position: relative;
     overflow: hidden;
     margin-top: 1rem;
-    width: 56.2rem;
+
     height: 39.5rem;
     background-image: url("../images/rewue-bg.png");
-    background-size: 56.2rem;
+    background-size: cover;
 }
 .review::before {
     position: absolute;
     content: " ";
     display: block;
     border-top: 7rem solid rgb(255, 255, 255);
-    border-right: 56.2rem solid transparent;
+    border-right: 1124px solid transparent;
 }
 .review::after {
     position: absolute;
@@ -680,7 +686,7 @@ body {
     margin-top: 8rem;
     border-bottom: 7rem solid rgb(255, 255, 255);
     bottom: 0;
-    border-left: 56.2rem solid transparent;
+    border-left: 1124px solid transparent;
 }
 .review__review-head {
     padding-top: 5rem;
@@ -765,6 +771,39 @@ body {
     border-radius: 0 0.7rem 0.7rem 0;
     box-shadow: 2rem 1.5rem 1rem rgba(163, 204, 64, 0.18);
 }
+.feedback-fonts input,
+.feedback-fonts select,
+.feedback-fonts textarea {
+    margin-bottom: 1rem;
+    background-color: rgb(179, 179, 179);
+    font-size: 0.8rem;
+    color: rgb(85, 85, 85);
+    text-align: left;
+    vertical-align: middle;
+}
+.feedback-fonts input {
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 15rem;
+    height: 1.5rem;
+    border-color: rgb(179, 179, 179);
+    border-radius: 7px;
+}
+.feedback-fonts select {
+    width: 15rem;
+    height: 1.5rem;
+    border-color: rgb(179, 179, 179);
+    border-radius: 7px;
+}
+.feedback-fonts textarea {
+    width: 15rem;
+    height: 10rem;
+    border-color: rgb(179, 179, 179);
+    border-radius: 7px;
+}
 .feedback__head-fonts {
     color: rgb(163, 204, 64);
     text-align: center;
@@ -783,18 +822,19 @@ body {
     display: block;
     display: flex;
     justify-content: center;
-    width: 56.2rem;
-    height: 19rem;
+    overflow-x: auto;
 }
-.map-img{
+
+.map-img {
     width: 49rem;
 }
 /* конец блока карта */
 
 /* блок футер */
 .footer {
-    display: block;
-    width: 56.2rem;
+    display: flex;
+    overflow: hidden;
+    min-width: 1124px;
     background-color: rgb(163, 204, 64);
     padding-bottom: 3rem;
 }
@@ -809,7 +849,7 @@ body {
     margin-left: 6rem;
     margin-top: 4rem;
 }
-.logo-svg-footer {  
+.logo-svg-footer {
     width: 11rem;
     height: 5rem;
 }
@@ -823,7 +863,7 @@ body {
 .footer__text {
     font-family: "IBM Plex Sans Lt";
     font-weight: 400;
-     margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
     font-size: 0.7rem;
     width: 13.5rem;
     line-height: 1.3;

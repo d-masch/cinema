@@ -11,11 +11,10 @@
     }
     .wellcome {
         display: flex;
+        width: 18rem;
         align-content: flex-start;
         flex-wrap: wrap;
         position: relative;
-        width: 18rem;
-        height: 25rem;
     }
     .wellcome__menu-mobile {
         /* display: block; */
@@ -147,7 +146,8 @@
         padding-bottom: 8rem;
         text-align: center;
         color: rgb(255, 255, 255);
-        width: 56.2rem;
+       max-width: 100%;
+       min-width: 320px;
     }
     .whywe {
         opacity: 0.99;
@@ -250,18 +250,27 @@
         line-height: 0.72rem;
     }
     .getgift {
-        height: 36rem;
+        height: 30rem;
+width: auto;
     }
     .giftimage {
+        margin-left: 1.5rem;
+        margin-top: 0rem;    
+    }
+    .get-gift{
+        float: left; 
         margin-left: 2rem;
-        margin-top: 0rem;
-        
-        
-
+        margin-top: 2rem;
+    }
+    .button_2 {
+        background-color: rgb(163, 204, 64);
+        color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
     }
     .flex_1 {       
         flex-wrap: wrap;
-        width: 18rem;
+        width: 100%;
+        justify-content: center;
     }
     .gift-head {
         font-family: "IBM Plex Sans";
@@ -285,6 +294,9 @@
     .button_2 span {
         font-size: 1.3rem;
     }
+    .movies {
+        width: 18rem;
+    }
     .movies-head {
         margin: 2rem 0 1rem 0rem;
         text-align: center;
@@ -292,10 +304,11 @@
     .movies-head_text {
         font-family: "IBM Plex Sans Lt";
         font-weight: 400;
-        width: 35rem;
+        width: 18rem;
         margin-top: 1.5rem;
         margin-bottom: 3rem;
-        font-size: 0.7rem;
+        font-size: 1rem;
+        padding: 0 .2rem 0 .2rem;
         margin: auto;
         text-align: center;
     }
@@ -307,17 +320,33 @@
         line-height: 1.3;
     }
     .movies-images {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        margin-left: 1.5rem;
     }
     .movies-head_text {
         font-size: 0.65rem;
     }
+    .goods {
+        display: block;
+        width: 18rem;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+    .goods__goods-head {
+        margin: 2rem 0 1rem 4rem;
+    }
     .goods__goods-descrtext {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
+        width: 17rem;
+        margin: 0 0 0 0;
+        padding-bottom: 0;
+        padding: 0 .5rem 1rem .5rem;
     }
     .goods__goods-images {
-        width: 43rem;
+        flex-wrap: wrap;
+        width: 18rem;
+        justify-content: space-evenly;
     }
     .goods__goods-image1 img {
         width: 14rem;
@@ -337,12 +366,12 @@
         height: 11rem;
         top: 10rem;
     }
-    .review {
+    .review{
         display: block;
         position: relative;
         overflow: hidden;
         margin-top: 1rem;
-        width: 56.2rem;
+        width: 18rem;
         height: 40rem;
         background-image: url("../images/rewue-bg.png");
         background-size: cover;
@@ -362,9 +391,10 @@
     .review__review-item {
         position: relative;
         display: flex;
-        width: 56rem;
+        width: 18rem;
         cursor: pointer;
         margin-left: 4rem;
+        overflow: hidden;
     }
     .review__review-item1-content {
         width: 14rem;
@@ -372,47 +402,53 @@
         border-radius: 0.5rem;
     }
     .review__review-item1-content {
-        width: 10.6rem;
+        width: auto;
         background-color: rgba(163, 204, 64, 0.8);
         border-radius: 0.5rem;
     }
     .review__review-descrtext {
         font-size: 0.8rem;
     }
+
+
+
     /* добавлены стили кнопок навигации  */
     .owl-carousel .owl-nav button.owl-next {
-        top: 7rem;
-        right: 23rem;
+        top: 0rem;
+        right: 0rem;
+        display: none;
     }
     .owl-carousel .owl-nav button.owl-prev {
-        top: 7rem;
-        left: 15rem;
+        top: 0rem;
+        left: 0rem;
+        display: none;
     }
     /* */
     .feedback {
         display: block;
         margin-top: 2.1rem;
         margin-bottom: 3rem;
-        width: 56.2rem;
+        width: 18rem;
         height: 26.35rem;
         border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
     }
     .feedback__input-form {
         display: inline-block;
         overflow: hidden;
-        max-width: 45rem;
-        width: 45rem;
-        padding-left: 3rem;
+       
+        width: 18rem;
+        padding-left: 0rem;
         height: 26.35rem;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
     .feedback__head-fonts {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 1.3;
+        text-align: left;
     }
     .feedback-fonts {
-        font-size: 1.5rem;
-        padding-left: 3rem;
+        font-size: 1rem;
+        padding-left: 0rem;
     }
     .feedback__gradient-image {
         display: none;
@@ -427,5 +463,9 @@
     .logo-svg-footer {
         width: 11rem;
         height: 5rem;
+    }
+    .footer{
+        width: 18rem;
+        overflow: hidden;
     }
 }

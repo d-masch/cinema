@@ -24,8 +24,9 @@
         <style></style>
     </head>
     <body class="body-styles">
-        <main>
-            <div class="wellcome">
+        <main class="main">
+            <div class="wellcome" style="background-image: url(./images/Background-1.jpg);">
+                
                 <!--логотип-->
                 <div class="wellcome__menu-logo">
                     <a href="http://university.innopolis.ru" target="_blank">
@@ -431,9 +432,8 @@
                         </div>
                         <div
                             class="get-gift"
-                            style="float: right; font-size: 1rem"
                         >
-                            <form action="/order">
+                            <form class="wrapper-button_2" action="/order">
                                 <button class="button_2" type="button">
                                     <span>Получить подарок</span>
                                 </button>
@@ -442,7 +442,6 @@
                     </div>
                 </div>
             </div>
-
             <!--фильмы-->
             <div class="movies">
                 <div class="movies-head">
@@ -796,10 +795,11 @@
                 <div class="feedback__box-shadow">
                     <div class="feedback__gradient-image"></div>
                     <div class="feedback__input-form">
+                        <div class="body-heading-fonts feedback__head-fonts">
+                            <h2>Обратная связь</h2>
+                        </div>
                         <form class="feedback-fonts" action="/order">
-                            <div class="body-heading-fonts feedback__head-fonts">
-                                <h2>Обратная связь</h2>
-                            </div>
+                            
                             <div>
                                 <input
                                     type="text"
@@ -814,7 +814,7 @@
                                     name="choise place"
                                     required
                                 >
-                                    <option value="">не выбрано</option>
+                                    <option value="">номер места</option>
                                     <option value="1">место 1</option>
                                     <option value="2">место 2</option>
                                     <option value="3">место 3</option>
@@ -835,22 +835,12 @@
                                     name="#"
                                 ></textarea>
                             </div>
-                            <div>
+                            <div class="input-checkbox">
                                 <input type="checkbox" id="checkbox" name="#" />
                                 <label for="checkbox"
                                     >Я согласен на обработку своих персональных
                                     данных</label
                                 >
-                            </div>
-
-                            <div>
-                                <input
-                                    type="email"
-                                    placeholder="введите электронную почту"
-                                    required
-                                    name="#"
-                                />
-                                <!--для учебных целей-->
                             </div>
                             <button type="submit">заказать</button>
                         </form>
@@ -931,7 +921,6 @@
                                 </svg>
                             </a>
                         </div>
-
                         <div class="twiter-link">
                             <a href="#">
                                 <svg
