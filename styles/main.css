@@ -1086,6 +1086,7 @@ body {
     top: 1rem;
 }
 .form-wrapper {
+    
     position: relative;
     background-color: #fff;
     max-width: 25rem;
@@ -1093,4 +1094,36 @@ body {
     margin: 6rem auto;
     border-radius: 2rem;
     border-radius: 2.5rem;
+   
+}
+.form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 1rem 1rem; 
+    vertical-align: middle;
+    justify-content: center;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+.form-inputs input, .form-inputs select, 
+.form-inputs label, .form-inputs button {
+    margin: .5rem 0 .5rem 0;
+    width: 18rem;
+    height: 2rem;
+}
+.form-inputs input,  .form-inputs select{
+    margin: .5rem 0 .5rem 0;
+    width: 18rem;
+    height: 2rem;
+    font-size: 1rem;  
+    background-color: rgb(196, 196, 196); 
+    border-radius: 5px;
+    border-color: rgb(196, 196, 196); 
+}
+#prize-popup > div > div.form-inputs > form > p > input{
+  width: 1rem;
+  height: 1rem;
+}
+#prize-popup > div > div.form-inputs > form > p{
+    font-size: .7rem; 
 }

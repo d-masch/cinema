@@ -14,13 +14,16 @@
         <link rel="stylesheet" href="./styles/media550.css" />
         <link rel="stylesheet" href="./styles/media320.css" />
 
-        <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
         ></script>
         <script defer src="./libs/owl.carousel.min.js"></script>
         <script defer src="./target/util.js"></script>
         <script defer src="./target/film.js"></script>
         <script defer src="./target/script.js"></script>
         <script defer src="./target/film-table.js"></script>
+        <script defer src="./js/popup.js"></script>
         <style></style>
     </head>
     <body class="body-styles">
@@ -516,7 +519,7 @@
                         </div>
                         <div class="get-gift">
                             <form class="wrapper-button_2" action="/order">
-                                <button class="button_2" type="button">
+                                <button id="popup-open" class="button_2" type="button">
                                     <span>Получить подарок</span>
                                 </button>
                             </form>
@@ -919,10 +922,9 @@
                             <div class="input-checkbox">
                                 <input type="checkbox" id="checkbox" name="#" />
                                 <label for="checkbox">
-                                    Я согласен на обработку
-                                    своих персональных данных
-                                    </label
-                                >
+                                    Я согласен на обработку своих персональных
+                                    данных
+                                </label>
                             </div>
                             <div class="order-waper">
                                 <button class="order-button" type="submit">
@@ -1167,9 +1169,9 @@
             </div>
         </footer>
         <!--pup-up окно-->
-        <div class="popup">
+        <div id="prize-popup" class="popup hidden">
             <div class="form-wrapper">
-                <div class="close">
+                <div id="popup-close" class="close">
                     <svg
                         width="35"
                         height="35"
@@ -1183,6 +1185,43 @@
                             fill="white"
                         />
                     </svg>
+                </div>
+                <div class="form-inputs">
+                   
+                        <input
+                            type="text"
+                            required
+                            placeholder="полное имя"
+                            name="name"
+                        />
+                        <input
+                            type="text"
+                            required
+                            placeholder="e-mail"
+                            name="e-mail"
+                        />
+                        <select
+                        aria-label="выбор места"
+                        name="choise-place"
+                        required
+                    >
+                        <option value="none" disabled selected>Bыберите подарок</option>
+                        <option value="thirdTicket">Бесплатный 3-ий билет</option>
+                        <option value="doublePop">Удвоим
+                            попкорн</option>
+                        <option value="doubleDrinK">Удвоим напиток</option>
+                    </select>
+
+                    <form class="st-checkbox" method="post">
+                        <p><input class="input-checkbox" type="checkbox" required name="input-checkbox" />
+                            Я согласен на обработку своих персональных
+                            данных
+                        </p>
+                    </form>
+                        <button class="order-button" type="submit">
+                            отправить
+                        </button>
+                        
                 </div>
             </div>
         </div>
