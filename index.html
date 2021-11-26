@@ -412,66 +412,71 @@
                     <h2>Выберите фильм</h2>
                 </div>
                 <div class="table-wrapper">
-                <table class="movietable__table a">
-                    <colgroup>
-                        <col style="width: 9.5%" />
-                        <col style="width: 28%" />
-                        <col style="width: 28%" />
-                        <col style="width: 38%" />
-                    </colgroup>
-                    <thead class="movietable__table-head table-heading-fonts">
-                        <tr class="movietable__table-head-trow">
-                            <th></th>
-                            <th>
-                                <div style="float: left">Начало сеанса</div>
-                                <div
-                                    style="
-                                        display: inline-block;
-                                        margin-left: 0.5rem;
-                                    "
-                                >
-                                    <img
-                                        src="./images/corner-up.png"
-                                        alt="стрелка вверх"
-                                    />
-                                </div>
-                            </th>
-                            <th>
-                                <div style="float: left">Название фильма</div>
-                                <div
-                                    style="
-                                        display: inline-block;
-                                        margin-left: 1.25rem;
-                                    "
-                                >
-                                    <img
-                                        src="./images/corner-down.png"
-                                        alt="стрелка вниз"
-                                    />
-                                </div>
-                            </th>
-                            <th>Жанр</th>
-                        </tr>
-                    </thead>
-                    <!-- tbody реализован в js -->
-                    <tbody
-                        id="table-body"
-                        class="table-fonts table-body"
-                    ></tbody>
-                    <tfoot class="table-footer-fonts">
-                        <tr>
-                            <td colspan="4">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore <br />magna
-                                    aliqua. Ut enim ad minim veniam.
-                                </p>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+                    <table class="movietable__table a">
+                        <colgroup>
+                            <col style="width: 9.5%" />
+                            <col style="width: 28%" />
+                            <col style="width: 28%" />
+                            <col style="width: 38%" />
+                        </colgroup>
+                        <thead
+                            class="movietable__table-head table-heading-fonts"
+                        >
+                            <tr class="movietable__table-head-trow">
+                                <th></th>
+                                <th>
+                                    <div style="float: left">Начало сеанса</div>
+                                    <div
+                                        style="
+                                            display: inline-block;
+                                            margin-left: 0.5rem;
+                                        "
+                                    >
+                                        <img
+                                            src="./images/corner-up.png"
+                                            alt="стрелка вверх"
+                                        />
+                                    </div>
+                                </th>
+                                <th>
+                                    <div style="float: left">
+                                        Название фильма
+                                    </div>
+                                    <div
+                                        style="
+                                            display: inline-block;
+                                            margin-left: 1.25rem;
+                                        "
+                                    >
+                                        <img
+                                            src="./images/corner-down.png"
+                                            alt="стрелка вниз"
+                                        />
+                                    </div>
+                                </th>
+                                <th>Жанр</th>
+                            </tr>
+                        </thead>
+                        <!-- tbody реализован в js -->
+                        <tbody
+                            id="table-body"
+                            class="table-fonts table-body"
+                        ></tbody>
+                        <tfoot class="table-footer-fonts">
+                            <tr>
+                                <td colspan="4">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore
+                                        <br />magna aliqua. Ut enim ad minim
+                                        veniam.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
             <!--конец таблицы с фильмами-->
 
@@ -521,7 +526,11 @@
                         </div>
                         <div class="get-gift">
                             <form class="wrapper-button_2" action="/order">
-                                <button id="popup-open" class="button_2" type="button">
+                                <button
+                                    id="popup-open"
+                                    class="button_2"
+                                    type="button"
+                                >
                                     <span>Получить подарок</span>
                                 </button>
                             </form>
@@ -1189,42 +1198,52 @@
                     </svg>
                 </div>
                 <div class="form-inputs">
-                   
+                    <div class="st-input1 st-input1_focused st-input1_error">
                         <input
                             type="text"
                             required
                             placeholder="полное имя"
                             name="name"
-                            />
-                            <p class="st-input1__error-msg">Error message</p>      
+                        />
+                        <p class="st-input1__error-msg">Error message</p>
+                    </div>
+                    <div class="st-input1 st-input1_focused st-input1_error">
                         <input
                             type="text"
                             required
                             placeholder="e-mail"
                             name="e-mail"
                         />
+                        <p class="st-input1__error-msg">Error message</p>
+                    </div>
+                    <div class="input-wrap">
                         <select
-                        aria-label="выбор места"
-                        name="choise-place"
-                        required
-                    >
-                        <option value="none" disabled selected>Bыберите подарок</option>
-                        <option value="thirdTicket">Бесплатный 3-ий билет</option>
-                        <option value="doublePop">Удвоим
-                            попкорн</option>
-                        <option value="doubleDrinK">Удвоим напиток</option>
-                    </select>
-
-                    <form class="st-checkbox" method="post">
-                        <p><input class="input-checkbox" type="checkbox" name="input-checkbox" />
-                            Я согласен на обработку своих персональных
-                            данных
-                        </p>
-                    </form>
-                        <button class="order-button" type="submit">
-                            отправить
-                        </button>
-                        
+                        id="choose-prize"
+                            name="choise-place"
+                            class="input-text input-select"
+                        >
+                            <option value="none" disabled selected>
+                                Bыберите подарок
+                            </option>
+                            <option value="thirdTicket">
+                                Бесплатный 3-ий билет
+                            </option>
+                            <option value="doublePop">Удвоим попкорн</option>
+                            <option value="doubleDrinK">Удвоим напиток</option>
+                        </select>
+                    </div>
+                    <label class="st-checkbox">
+                        <input
+                            type="checkbox"
+                            class="input-checkbox"
+                            name="input-checkbox"
+                        />
+                        <span class="st-checkbox__dot">
+                        Я согласен на обработку своих персональных данных</span>
+                    </label>
+                    <button class="order-button" type="submit">
+                        отправить
+                    </button>
                 </div>
             </div>
         </form>

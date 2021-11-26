@@ -1127,3 +1127,23 @@ body {
 #prize-popup > div > div.form-inputs > form > p{
     font-size: .7rem; 
 }
+.st-input1 input, .st-input1 select {
+    border: 3px solid rgb(196, 196, 196); 
+    border-radius: 7px;
+}
+.st-input1_focused input:focus{
+ 
+  border: 3px solid rgb(190, 233, 86);
+}
+.st-input1 input:hover{
+background-color: #fff;
+border: 3px solid rgb(190, 233, 86);
+}
+.form-inputs > label > input{
+    width: .7rem;
+    height: .7rem;
+    align-self: flex-start;
+}
+.form-inputs > label > span{
+    font-size: .7rem;
+}
