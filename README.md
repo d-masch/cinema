@@ -2,14 +2,14 @@
 *учебный проект создания онлайн кассы кинотеатра*
 
 ## Установка зависимостей
-shell'''
+'''shell
 npm install @babel/core @babel/cli @babel/preset-env  
 '''
 ## Запуск Babel
-shell'''
+'''shell
 npx babel js -d target
 '''
 ## Запуск Babel с  автоматической пересборкой
-shell'''
+'''shell
 npx babel js -d target --watch
 '''

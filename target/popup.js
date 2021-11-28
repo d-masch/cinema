@@ -76,6 +76,12 @@ prizeForm.addEventListener("submit", function (event) {
     return;
   }
 
+  if (!/^[\w]{3,16}@[a-z0-9]{4,10}\.[a-z]{2,3}$/.test(emailValue)) {
+    emailField.setError("Укажите валидный email");
+    nameField.focus();
+    return;
+  }
+
   if (prizeSelect.value === 'none') {
     prizeSelect.classList.add(INPUT_ERROR_CLASS);
     return;
